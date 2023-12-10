@@ -11,7 +11,7 @@ async def func_start(message: Message):
                     message.from_user.last_name, message.from_user.url)
         
     kb = [
-        [KeyboardButton(text="открыть swzy!", web_app=WebAppInfo(url=""))]
+        [KeyboardButton(text="открыть swzy!", web_app=WebAppInfo(url="https://iridescent-duckanoo-20b130.netlify.app/"))]
     ]
     keyboard = ReplyKeyboardMarkup(
         keyboard=kb,
