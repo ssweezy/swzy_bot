@@ -693,3 +693,14 @@ keyboard
 2023-12-10 21:46:09,606 INFO Update id=683638716 is handled. Duration 422 ms by bot id=6768503726
 2023-12-10 21:56:14,062 INFO Polling stopped
 2023-12-10 21:56:14,622 INFO Polling stopped for bot @swzy_bot id=6768503726 - 'SWZY!'
+2023-12-10 21:57:23,798 INFO Start polling
+2023-12-10 21:57:23,897 INFO Run polling for bot @swzy_bot id=6768503726 - 'SWZY!'
+2023-12-10 21:57:30,009 INFO Update id=683638717 is handled. Duration 389 ms by bot id=6768503726
+2023-12-10 21:58:58,396 INFO Polling stopped
+2023-12-10 21:58:59,969 INFO Polling stopped for bot @swzy_bot id=6768503726 - 'SWZY!'
+2023-12-10 21:59:51,755 INFO Start polling
+2023-12-10 21:59:51,841 INFO Run polling for bot @swzy_bot id=6768503726 - 'SWZY!'
+2023-12-10 21:59:52,393 INFO Update id=683638718 is handled. Duration 422 ms by bot id=6768503726
+2023-12-10 21:59:55,096 INFO Update id=683638719 is handled. Duration 264 ms by bot id=6768503726
+2023-12-10 22:11:38,933 INFO Polling stopped
+2023-12-10 22:11:39,513 INFO Polling stopped for bot @swzy_bot id=6768503726 - 'SWZY!'
