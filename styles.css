@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+@font-face {
+    font-family:kishtest-boldultrawide;
+    font-weight: basic;
+    font-style: basic;
+    src: url(fonts/kish-font/kishtest-boldultrawide.otf);
+}
+.container-fluid {
+    
+    font-size: 100%;
+   text-align: center;
+    height: 15%;
+    color: #A6B1E1;
+
+font-family: kishtest-boldultrawide;
+font-size: 200%;
+font-style: normal;
+font-weight: 75%;
+line-height: normal;
+}
+.d-flex {
+    display: flex;
+}
+.container {
+    font-family: kishtest-boldultrawide;
+
+    margin: 0 -50px;
+ }
+
+.l1 {
+    align-self: 25%;
+}
+
+body {
+    
+    font-family: "kishtest-boldultrawide",  Arial, Helvetica, sans-serif;
+ 
+    font-size: 16px;
+ }
