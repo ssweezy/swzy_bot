@@ -24,18 +24,19 @@ h1 {
 }
 
 .categories{
+    align-content: center;
     margin: 0 0 3% 0;
 }
 
-
 .topbutton{
     display: inline-flex;
-    margin: 0px 4% 0px 4%;
-    padding: 5px 8px 5px 8px;
+    margin: 0px 1% 0px 1%;
+    padding: 5px 15px 5px 15px;
     border-radius: 30px;
     border: none;
     background-color: #A6B1E16B;
     font-family: Montserrat Alternates;
+    font-size: large;
     color: #818181;
     transition-duration: 0.5s ;
 }
@@ -43,4 +44,8 @@ h1 {
 .topbutton:hover {
     background-color: #a6b1e1b3;
     cursor: pointer;
+}
+
+button#button2 {
+    /* padding: 5px 15px 5px 15px; */
 }
