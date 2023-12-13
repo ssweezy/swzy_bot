@@ -21,6 +21,7 @@ h1 {
     color: #A6B1E1;
     font-size: 400%;
     cursor: pointer;
+    margin: 30px 0 10px 0;
 }
 
 .categories{
@@ -44,8 +45,4 @@ h1 {
 .topbutton:hover {
     background-color: #a6b1e1b3;
     cursor: pointer;
-}
-
-button#button2 {
-    /* padding: 5px 15px 5px 15px; */
 }
