@@ -1010,3 +1010,8 @@ aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: inlin
 2023-12-13 14:42:32,607 INFO Run polling for bot @swzy_bot id=6768503726 - 'SWZY!'
 2023-12-13 14:42:37,799 INFO Update id=683638733 is handled. Duration 531 ms by bot id=6768503726
 2023-12-13 14:43:20,718 INFO Update id=683638734 is handled. Duration 469 ms by bot id=6768503726
+2023-12-13 14:45:07,136 INFO Update id=683638735 is handled. Duration 483 ms by bot id=6768503726
+2023-12-13 14:46:38,166 INFO Update id=683638736 is handled. Duration 389 ms by bot id=6768503726
+2023-12-13 18:00:14,158 ERROR Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2023-12-13 18:00:14,158 WARNING Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 6768503726)
+2023-12-13 18:00:25,398 INFO Connection established (tryings = 1, bot id = 6768503726)

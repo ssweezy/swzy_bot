@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Kish Test Ultra Wide;
+    src: url(fonts/kishtest-boldultrawide.otf);
+}
+
 body{
     background-color: #F3F3F3;
     /* width: 390px;
@@ -12,9 +17,10 @@ header{
     
 h1 {
     display: inline-flex;
-    font-family: Kish;
+    font-family: Kish Test Ultra Wide;
     color: #A6B1E1;
-    font-size: 300%;
+    font-size: 400%;
+    cursor: pointer;
 }
 
 .categories{
@@ -27,7 +33,14 @@ h1 {
     margin: 0px 4% 0px 4%;
     padding: 5px 8px 5px 8px;
     border-radius: 30px;
+    border: none;
     background-color: #A6B1E16B;
     font-family: Montserrat Alternates;
     color: #818181;
+    transition-duration: 0.5s ;
+}
+
+.topbutton:hover {
+    background-color: #a6b1e1b3;
+    cursor: pointer;
 }
