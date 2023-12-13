@@ -1,43 +1,33 @@
-* {
-    box-sizing: border-box;
-    margin: 0%;
-    padding: 0%;
+body{
+    background-color: #F3F3F3;
+    width: 390px;
+    height: 844px;
+    border: solid black 2px;
 }
-@font-face {
-    font-family:kishtest-boldultrawide;
-    font-weight: basic;
-    font-style: basic;
-    src: url(fonts/kish-font/kishtest-boldultrawide.otf);
-}
-.container-fluid {
+
+header{
+    text-align: center;
     
-    font-size: 100%;
-   text-align: center;
-    height: 15%;
+}
+    
+h1 {
+    display: inline-flex;
+    font-family: Kish;
     color: #A6B1E1;
-
-font-family: kishtest-boldultrawide;
-font-size: 200%;
-font-style: normal;
-font-weight: 75%;
-line-height: normal;
-}
-.d-flex {
-    display: flex;
-}
-.container {
-    font-family: kishtest-boldultrawide;
-
-    margin: 0 -50px;
- }
-
-.l1 {
-    align-self: 25%;
+    font-size: 300%;
 }
 
-body {
-    
-    font-family: "kishtest-boldultrawide",  Arial, Helvetica, sans-serif;
- 
-    font-size: 16px;
- }
+.categories{
+    margin: 0 0 3% 0;
+}
+
+
+.topbutton{
+    display: inline-flex;
+    margin: 0px 4% 0px 4%;
+    padding: 5px 8px 5px 8px;
+    border-radius: 30px;
+    background-color: #A6B1E16B;
+    font-family: Montserrat Alternates;
+    color: #818181;
+}
