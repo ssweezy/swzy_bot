@@ -1023,3 +1023,6 @@ aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: inlin
 2023-12-13 19:52:56,455 INFO Update id=683638740 is handled. Duration 468 ms by bot id=6768503726
 2023-12-13 19:53:58,828 INFO Update id=683638741 is handled. Duration 453 ms by bot id=6768503726
 2023-12-13 20:19:38,447 INFO Update id=683638742 is handled. Duration 514 ms by bot id=6768503726
+2023-12-13 20:25:43,747 INFO Update id=683638743 is handled. Duration 577 ms by bot id=6768503726
+2023-12-13 20:36:13,615 INFO Update id=683638744 is handled. Duration 467 ms by bot id=6768503726
+2023-12-13 20:39:02,775 INFO Update id=683638745 is not handled. Duration 0 ms by bot id=6768503726

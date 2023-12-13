@@ -27,18 +27,17 @@ h1 {
 .categories{
     align-content: center;
     margin: 0 0 3% 0;
-    overflow: scroll;
 }
 
 .topbutton{
     display: inline-flex;
     margin: 0px 2% 0px 2%;
-    padding: 5px 15px 5px 15px;
+    padding: 1% 1.3% 1% 1.3%;
     border-radius: 30px;
     border: none;
     background-color: #A6B1E16B;
     font-family: Montserrat Alternates;
-    font-size: 20px;
+    font-size: 110%;
     color: #818181;
     transition-duration: 0.5s ;
 }
