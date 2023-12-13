@@ -5,9 +5,9 @@
 
 body{
     background-color: #F3F3F3;
-    /* width: 390px;
-    height: 844px; */
-    /* border: solid black 2px; */
+    width:390px;
+    height: 844px;
+    border: solid black 2px;
 }
 
 header{
@@ -25,13 +25,13 @@ h1 {
 }
 
 .categories{
-    align-content: center;
-    margin: 0 0 3% 0;
+    flex-wrap: nowrap;
+    
 }
 
 .topbutton{
-    display: inline-flex;
-    margin: 0px 2% 0px 2%;
+    /* display: inline-flex; */
+    margin: 0px 1% 0px 1%;
     padding: 1% 3% 1% 3%;
     border-radius: 30px;
     border: none;
