@@ -25,8 +25,8 @@ h1 {
 }
 
 .topic {
-    font-family: Montserrat Alternates;
-    font-size: 100%;
+    font-family: Montserrat Alternates Bold;
+    font-size: 150%;
     color: #818181;
     text-align: left;
     margin-top: 5%;
@@ -69,7 +69,7 @@ img {
 }
 
 .card {
-    margin: 2% 0 0 3.5%;
+    margin: 2% 0 0 2%;
     padding: 0 0 0 0;
     border-radius: 10px;
     border: none;
