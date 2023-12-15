@@ -5,37 +5,41 @@
 
 body{
     background-color: #F3F3F3;
-    /* width:392px;
+    width:392px;
     height: 846px;
-    border: solid black 1px; */
+    border: solid black 1px;
 }
 
 header{
+    background-color: #F3F3F3;
     text-align: center;
-    
 }
     
 h1 {
-    display: inline-flex;
     font-family: Kish Test Ultra Wide;
     color: #A6B1E1;
+    background-color: #F3F3F3;
     font-size: 300%;
+    text-align: center;
     cursor: pointer;
+    padding: 10px 0 0 0;
     margin: 20px 0 20px 0;
+    position: sticky;
+    top: 20px;
 }
 
 .topic {
     font-family: Montserrat Alternates Bold;
     font-size: 150%;
-    color: #818181;
+    color: hsl(0, 0%, 80%);
     text-align: left;
-    margin-top: 5%;
-    margin-left: 3%;
+    margin-top: 6%;
+    margin-left: 8%;
 }
 
 .categories{
     flex-wrap: nowrap;
-    
+    text-align: center;
 }
 
 .topbutton{
