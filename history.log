@@ -1031,3 +1031,18 @@ aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: inlin
 2023-12-14 23:35:25,072 INFO Start polling
 2023-12-14 23:35:25,165 INFO Run polling for bot @swzy_bot id=6768503726 - 'SWZY!'
 2023-12-14 23:36:12,919 INFO Update id=683638746 is handled. Duration 421 ms by bot id=6768503726
+2023-12-15 21:55:28,133 INFO Start polling
+2023-12-15 21:55:28,224 INFO Run polling for bot @swzy_bot id=6768503726 - 'SWZY!'
+2023-12-15 21:55:28,961 INFO Update id=683638750 is handled. Duration 531 ms by bot id=6768503726
+2023-12-15 21:55:28,974 INFO Update id=683638754 is handled. Duration 547 ms by bot id=6768503726
+2023-12-15 21:55:28,984 INFO Update id=683638747 is handled. Duration 547 ms by bot id=6768503726
+2023-12-15 21:55:28,989 INFO Update id=683638753 is handled. Duration 547 ms by bot id=6768503726
+2023-12-15 21:55:28,991 INFO Update id=683638751 is handled. Duration 562 ms by bot id=6768503726
+2023-12-15 21:55:29,005 INFO Update id=683638748 is handled. Duration 578 ms by bot id=6768503726
+2023-12-15 21:55:29,007 INFO Update id=683638752 is handled. Duration 578 ms by bot id=6768503726
+2023-12-15 21:55:29,064 INFO Update id=683638749 is handled. Duration 625 ms by bot id=6768503726
+2023-12-15 21:55:38,679 INFO Update id=683638755 is handled. Duration 265 ms by bot id=6768503726
+2023-12-15 21:55:39,851 INFO Update id=683638756 is handled. Duration 375 ms by bot id=6768503726
+2023-12-15 22:15:38,482 INFO Update id=683638757 is handled. Duration 562 ms by bot id=6768503726
+2023-12-15 22:23:12,875 INFO Polling stopped
+2023-12-15 22:23:13,441 INFO Polling stopped for bot @swzy_bot id=6768503726 - 'SWZY!'

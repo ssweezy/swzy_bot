@@ -18,3 +18,4 @@ async def func_start(message: Message):
     )
     await message.answer("bo", reply_markup=ReplyKeyboardRemove())
     await message.answer(f"welcome to SWZY! co ltd", reply_markup=builder.as_markup())
+    print(message.text)
