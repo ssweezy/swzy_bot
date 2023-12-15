@@ -5,9 +5,9 @@
 
 body{
     background-color: #F3F3F3;
-    width:392px;
+    /* width:392px;
     height: 846px;
-    border: solid black 1px;
+    border: solid black 1px; */
 }
 
 header{
@@ -65,13 +65,13 @@ button#button2{
 }
 
 img {
-    width: 12vw
+    width: 170px
 }
 
 .card {
-    margin: 1vh 0.3vw;
+    margin: 2% 0 0 3.5%;
     padding: 0 0 0 0;
-    border-radius: 30px;
+    border-radius: 10px;
     border: none;
     background-color: #F3F3F3;
     transition-duration: 0.5s;
