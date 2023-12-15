@@ -3,8 +3,14 @@
     src: url(fonts/kishtest-boldultrawide.otf);
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 7git rem;
+}
+
 body{
     background-color: #F3F3F3;
+    scroll-behavior: smooth;
     /* width:392px;
     height: 846px;
     border: solid black 1px; */
@@ -12,41 +18,51 @@ body{
  
 h1 {
     font-family: Kish Test Ultra Wide;
-    color: #A6B1E1;
+    /* color: #A6B1E1; */
     background-color: #F3F3F3;
     font-size: 300%;
     text-align: center;
-    cursor: pointer;
+    /* cursor: pointer; */
     padding: 3vh 0 3vh 0;
     margin: 2vh 0 0vh 0;
     position: sticky;
     top: 0px;
 }
 
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #A6B1E1; 
+}
+
 .categories{
     flex-wrap: nowrap;
     text-align: center;
+    margin: 0.9vh 0 0 0 ;
 }
 
 .topbutton{
     /* display: inline-flex; */
-    /* margin: 0px 1% 0px 1%; */
+    /* margin: 0 0 0 0; */
     padding: 0.8vh 3vw 0.8vh 3vw;
     border-radius: 30px;
     border: none;
     background-color: #A6B1E16B;
     font-family: Montserrat Alternates;
-    font-size: 130%;
+    font-size: 1.2em;
+    text-decoration: none;
     color: #818181;
-    transition-duration: 0.5s ;
+    transition-duration: 0.5s;
+    scroll-behavior: smooth;
 }
 
 .topbutton:hover {
     background-color: #a6b1e1b3;
+    /* border: black 5px; */
     cursor: pointer;
 }
 
-button#button2{
+a#button2{
     margin: 0 4vw 0 4vw;
 }
 
