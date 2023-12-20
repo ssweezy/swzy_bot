@@ -103,14 +103,13 @@ a {
 
 .pluses {
     font-size: 1.2em;
-    text-align: center;
     background-color: #DAE0E8;
     color:#888888;
     border: none;
     border-radius: 1em;
     float: left;    
     /* height: 5vh; */
-    width: 1.5em;
+    padding: 0 0.5em 0 0.5em;
     margin: 0 0 0 0;
     transition-duration: 0.2s;
 }
