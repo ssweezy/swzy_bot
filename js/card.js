@@ -98,3 +98,4 @@ function renderInfoProduct(product) {
         `
     minibody.insertAdjacentHTML('beforeend', productItem);
 }
+
