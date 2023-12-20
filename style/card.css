@@ -83,7 +83,7 @@ a {
     border: none;
     margin: 0 2vw 0 2vw;
     padding: 0.5vh 7vw 0.5vh 7vw;
-    width: 25vw;
+    width: 20vw;
 
 }
 
@@ -102,14 +102,15 @@ a {
 }
 
 .pluses {
-    font-size: 1.5em;
+    font-size: 1.2em;
+    text-align: center;
     background-color: #DAE0E8;
     color:#888888;
     border: none;
     border-radius: 1em;
     float: left;    
     /* height: 5vh; */
-    width: 13vw;
+    width: 1.5em;
     margin: 0 0 0 0;
     transition-duration: 0.2s;
 }
