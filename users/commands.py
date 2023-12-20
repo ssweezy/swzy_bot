@@ -7,10 +7,12 @@ db = DataBase('swzy_db')
 
 
 async def func_start(message: Message):
+    # проверка добавлен ли человек в базу данных
     if not db.user_exists(message.from_user.id):
         db.add_user(message.from_user.id, message.from_user.username, message.from_user.first_name,
                     message.from_user.last_name, message.from_user.url)
-        
+
+    # открывается    
     builder = InlineKeyboardBuilder()
     builder.add(InlineKeyboardButton(
         text="открыть swzy!",

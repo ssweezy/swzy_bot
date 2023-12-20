@@ -1,11 +1,13 @@
 @font-face {
     font-family: Kish Test Ultra Wide;
-    src: url(fonts/kishtest-boldultrawide.otf);
+    src: url(/fonts/kishtest-boldultrawide.otf);
 }
 
 html {
+    transition: 0.5s 1s;
     scroll-behavior: smooth;
     scroll-padding: 13vh;
+    
 }
 
 body{

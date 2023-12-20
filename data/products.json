@@ -1,0 +1,28 @@
+[
+    {
+        "id": 1,
+        "type": "pants",
+        "title": "Polar Bigboy",
+        "price": "3199",
+        "img1": "bbcard.png",
+        "img2": "bbw.png",
+        "descr": "white" 
+    },
+    {
+        "id": 2,
+        "type": "zip",
+        "title": "carhartt zip",
+        "price": "2499",
+        "img1": "carhcard.png", 
+        "img2": "carharttzip.png",
+        "descr": "grey" 
+    },
+    {
+        "id": 3,
+        "type": "long",
+        "title": "Polar Bigboy",
+        "price": "3199",
+        "img1": "bbcard.png",
+        "img2": "bbcard.png",
+        "descr": "white" 
+        }]
