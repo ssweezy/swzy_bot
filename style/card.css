@@ -38,15 +38,21 @@ a {
 }
 
 .photo {
-
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
     text-align: center;
-    /* margin: 0 1vw 0 1vw; */
+    justify-content: space-between;
+
+    .production{
+        display: inline-block;
+    }
 }
 
 .production {
 
-    height: 45vh;
-    /* margin-top: 2vh; */
+    height: 40vh;
+    margin: 0 5vw 0 8vw;
     border-radius: 2em;
    
 }
@@ -84,6 +90,7 @@ a {
     margin: 0 2vw 0 2vw;
     padding: 0.5vh 7vw 0.5vh 7vw;
     width: 20vw;
+    
 
 }
 

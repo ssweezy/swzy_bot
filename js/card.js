@@ -72,7 +72,10 @@ function renderInfoProduct(product) {
     const productItem = 
         `
     <div class="photo">
-        <img class="production" src="./card_photos/${img2}" alt="${descr}"> 
+        <img class="production" src="./card_photos/${img2}" alt="${descr}">
+        <img class="production" src="./card_photos/${img2}" alt="${descr}">
+        <img class="production" src="./card_photos/${img2}" alt="${descr}">
+        <img class="production" src="./card_photos/${img2}" alt="${descr}">
     </div>
 
         <div class="name">${title}</div>
@@ -89,9 +92,9 @@ function renderInfoProduct(product) {
             <div class="price" id="chena">${price} RUB</div>
 
             <div class="howmuch">
-                <button class="pluses" id="plusik">+</button>
+                <button class="pluses" id="plusik">-</button>
                 <div class="amount">0</div>
-                <button class="pluses" id="minusik">-</button>
+                <button class="pluses" id="minusik">+</button>
             </div>
         </div>    
     </div>
