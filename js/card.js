@@ -138,7 +138,7 @@ let tg = window.Telegram.WebApp
 //массив из кнопок размеров
 tg.MainButton.show()
 
-tg.MainButton.onClick(window.location.href = 'index.html')
+// tg.MainButton.onClick(window.location.href = 'index.html')
 
 tg.BackButton.show()
 
