@@ -149,3 +149,8 @@ let tg = window.Telegram.WebApp
 if (tg.MainButton.isVisible){
     tg.MainButton.hide()
 }
+
+if (tg.BackButton.isVisible){
+    tg.BackButton.hide()
+}
+
