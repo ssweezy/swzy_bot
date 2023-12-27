@@ -83,28 +83,28 @@ function renderInfoProduct(product) {
         <div class="radio-tile-group">
 
             <div class="input-container">
-                <input id="S" type="radio" name="radio" value=S>
+                <input id="S" type="radio" name="radio" value="S">
                 <div class="radio-tile">
                   <label for="S">S</label>
                 </div>
             </div>
             
             <div class="input-container">
-                <input id="M" type="radio" name="radio" value=M>
+                <input id="M" type="radio" name="radio" value="M">
                 <div class="radio-tile">
                   <label for="M">M</label>
                 </div>
             </div> 
 
             <div class="input-container">
-                <input id="L" type="radio" name="radio" value=L>
+                <input id="L" type="radio" name="radio" value="L">
                 <div class="radio-tile">
                   <label for="L">L</label>
                 </div>
             </div> 
 
             <div class="input-container">
-                <input id="XL" type="radio" name="radio" value=Xl>
+                <input id="XL" type="radio" name="radio" value="Xl">
                 <div class="radio-tile">
                   <label for="XL">XL</label>
                 </div>
@@ -135,12 +135,5 @@ function renderInfoProduct(product) {
 //WEBAPP ЧАСТЬ
 let tg = window.Telegram.WebApp
 
-tg.expand()
-
 //массив из кнопок размеров
-var radio = document.getElementsByName("radio")
-
-
-radio.forEach(radioBtn => {radioBtn.addEventListener("change", function() {
-    tg.MainButton.show()
-})})
+tg.MainButton.show()

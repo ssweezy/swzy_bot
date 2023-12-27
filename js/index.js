@@ -143,4 +143,9 @@ function createCards(data) {
 
 
 
+//WEBAPP ЧАСТЬ
+let tg = window.Telegram.WebApp
 
+if (tg.MainButton.isVisible){
+    tg.MainButton.hide()
+}
