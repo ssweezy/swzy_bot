@@ -4,25 +4,31 @@
         "type": "pants",
         "title": "Polar Bigboy",
         "price": "3199",
-        "img1": "bbcard.png",
-        "img2": "bbw.png",
-        "descr": "white" 
+        "cardimg": "/bbw/bbcard.png",
+        "img1": "/bbw/bbw.png",
+        "img2": "/bbw/bbw2.png",
+        "color": "светло-голубой",
+        "material": "хлопок"
     },
     {
         "id": 2,
         "type": "zip",
         "title": "Carhartt zip",
         "price": "2499",
-        "img1": "carhcard.png", 
-        "img2": "carharttzip.png",
-        "descr": "grey" 
+        "cardimg": "carhcard.png",
+        "img1": "carharttzip.png",
+        "img2": "/bbw/bbw2.png", 
+        "color": "grey",
+        "material": "хлопок"
     },
     {
         "id": 3,
         "type": "long",
         "title": "Polar Bigboy",
         "price": "3199",
-        "img1": "bbcard.png",
-        "img2": "bbw.png",
-        "descr": "white" 
+        "cardimg": "/bbw/bbcard.png",
+        "img1": "bbw.png",
+        "img2": "/bbw/bbw2.png", 
+        "color": "white",
+        "material": "хлопок" 
         }]

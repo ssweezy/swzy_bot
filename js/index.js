@@ -115,7 +115,7 @@ function renderStartPage(data) {
 // Рендер карточки
 function createCards(data) {
     data.forEach(card => {
-        const {id, img1, title, type} = card;
+        const {id, cardimg, title, type} = card;
         var pants = document.getElementById('pants')
         var zip = document.getElementById('zip')
         var long = document.getElementById('long')
@@ -125,7 +125,7 @@ function createCards(data) {
                     <div class="card__top">
                         <a href="/card.html?id=${id}" class="card__image">
                             <img
-                                src="./card_photos/${img1}"
+                                src="./card_photos/${cardimg}"
                                 alt="${title}"
                             />
                         </a>

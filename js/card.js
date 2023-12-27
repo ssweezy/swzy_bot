@@ -17,7 +17,7 @@ async function getProducts() {
     try {
 
         if (!productsData.length) {
-            const res = await fetch('./data/products.json');
+            const res = await fetch('../data/products.json');
             if (!res.ok) {
                 throw new Error(res.statusText)
             }
@@ -64,39 +64,68 @@ function loadProductDetails(data) {
     renderInfoProduct(findProduct);
 }
 
-
+// карусель и фотки
 function renderInfoProduct(product) {
-    const {img2, title, price, descr } = product;
+    const {img1, img2, title, price, color, material} = product;
     // const priceDiscount = price - ((price * discount) / 100);
-    // var minibody = document.getElementById("minibody");
     const productItem = 
         `
     <div class="photo">
-        <img class="production" src="./card_photos/${img2}" alt="${descr}">
-        <img class="production" src="./card_photos/${img2}" alt="${descr}">
-        <img class="production" src="./card_photos/${img2}" alt="${descr}">
-        <img class="production" src="./card_photos/${img2}" alt="${descr}">
+        <img class="production" src="./card_photos/${img1}">
+        <img class="production" src="./card_photos/${img2}">
+        <img class="production" src="./card_photos/${img1}">
+        <img class="production" src="./card_photos/${img2}">
     </div>
 
-        <div class="name">${title}</div>
+    <div class="name">${title}</div>
 
-        <div class="sizes">
-            <button class="button">S</button>
-            <button class="button">M</button>
-            <button class="button">L</button>
-            <button class="button">XL</button>
-            <!-- <button class="button">XXL</button> -->
-        </div>
+    <div class="container">
+        <div class="radio-tile-group">
 
-        <div class="price-settings">
-            <div class="price" id="chena">${price} RUB</div>
-
-            <div class="howmuch">
-                <button class="pluses" id="plusik">-</button>
-                <div class="amount">0</div>
-                <button class="pluses" id="minusik">+</button>
+            <div class="input-container">
+                <input id="S" type="radio" name="radio">
+                <div class="radio-tile">
+                  <label for="S">S</label>
+                </div>
             </div>
-        </div>    
+            
+            <div class="input-container">
+                <input id="M" type="radio" name="radio">
+                <div class="radio-tile">
+                  <label for="M">M</label>
+                </div>
+            </div> 
+
+            <div class="input-container">
+                <input id="L" type="radio" name="radio">
+                <div class="radio-tile">
+                  <label for="L">L</label>
+                </div>
+            </div> 
+
+            <div class="input-container">
+                <input id="XL" type="radio" name="radio">
+                <div class="radio-tile">
+                  <label for="XL">XL</label>
+                </div>
+            </div> 
+
+        </div>
+    </div>
+
+    <div class="price-settings">
+        <div class="price" id="chena">${price} RUB</div>
+        <!-- <div class="howmuch">
+            <button class="pluses" id="plusik">+</button>
+            <div class="amount">0</div>
+            <button class="pluses" id="minusik">-</button>
+        </div> -->
+    </div>
+
+    <div class="about">
+        материал: ${material}
+        <br>
+        цвет: ${color}
     </div>
         `
     minibody.insertAdjacentHTML('beforeend', productItem);
