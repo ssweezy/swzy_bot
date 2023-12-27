@@ -137,3 +137,5 @@ let tg = window.Telegram.WebApp
 
 //массив из кнопок размеров
 tg.MainButton.show()
+
+tg.BackButton.show()
