@@ -1,6 +1,143 @@
-@import url('./reset.css');
+@font-face {
+    font-family:Kish Test Ultra Wide;
+    font-weight: basic;
+    font-style: basic;
+    src: url(/fonts/kishtest-boldultrawide.otf);
+}
+@font-face {
+    font-family:ArcherPro Bold;
+    font-weight: basic;
+    font-style: basic;
+    src: url(/fonts/ArcherPro\ Bold.otf);
+}
 
-.cart{
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@700&display=swap');
+body {
+    background-color:#F3F3F3;
+    font-family: "kishtest-boldultrawide.otf";
+    font-size: 1em;
+}
+
+h1 {
+    font-family: Kish Test Ultra Wide;
+    color: #A6B1E1;
+    background-color: #F3F3F3;
+    font-size: 300%;
+    text-align: center;
+    /* cursor: pointer; */
+    padding: 2vh 0 2vh 0;
+    margin: 0vh 0 0vh 0;
+    position: sticky;
+    top: 0px;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #A6B1E1; 
+}
+
+span.amount {
+    font-family: Montserrat Alternates;
+    font-size: 1rem;
+    color: hsl(0, 0%, 80%);
+    text-align: left;
+    margin-top: 2vh;
+    margin-bottom: 5vh;
+    margin-left: 3vw;
+}
+
+.offer {
+    margin: 1vh 0 0 0;
+    background-color: hsl(0, 5%, 91%);
+    border-radius: 1rem;
+    display: flex;
+}    
+
+img{
+    width: 25vw;
+    margin: 1vh 1vw 1vh 1vh;
+    border-radius: 1rem;
+
+}
+
+.info-container {
+    margin: 1vh 0 0 2vw;
+}
+
+.name {
+    display: block;
+    font-family: 'Jost', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #888888; 
+    margin: 1vh 0 0 0;
+}
+
+.color {
+    display: block;
+    font-family: 'Jost', sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    color: #888888; 
+    margin: 1vh 0 0 0;
+}
+
+.price {
+    display: inline-flex;
+    font-variant-numeric: lining-nums; 
+    font-family: ArcherPro Bold;
+    font-size: 1.4em;
+    color: #888888;
+    margin: 1vh 0vw 0 0vw;    
+}
+
+.del-block {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: end;
+}
+
+.del-btn {
+    margin: 0 5vw 0 0vw;
+    padding-top: 0.5vh;
+    font-size: 2em;
+    border: none;
+    border-radius: 0.5em;
+    background-color:hsl(0, 5%, 91%);
+    transition: 300ms;
+}   
+
+.del-btn:hover{
+    background-color: rgba(253, 7, 7, 0.671);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .cart{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -93,4 +230,4 @@
     border: 1px solid #ff6633;
     background-color: #ff6633;
     color: #fff;
-}
+} */

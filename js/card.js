@@ -138,6 +138,8 @@ let tg = window.Telegram.WebApp
 //массив из кнопок размеров
 tg.MainButton.show()
 
+tg.MainButton.setText('добавить в корзину')
+
 // tg.MainButton.onClick(window.location.href = 'index.html')
 
 tg.BackButton.show()
@@ -164,6 +166,8 @@ tg.MainButton.onClick(function(){
     if(size == undefined){
         console.log ('didnt choose size')
         tg.showAlert("выберите размер")
+        return
     }
+    tg.MainButton.setParams(text('в корзину'))
 })
 
