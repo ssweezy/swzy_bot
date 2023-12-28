@@ -161,7 +161,7 @@ tg.MainButton.onClick(function(){
         }
     }
     if(size == undefined){
-        tg.showAlert('выберете размер'[function(){console.log('main button clicked without size')}])
+        tg.showAlert(message['выберете размер',function(){console.log('main button clicked without size')}])
     }
 })
 
