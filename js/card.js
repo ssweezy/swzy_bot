@@ -138,7 +138,7 @@ let tg = window.Telegram.WebApp
 //массив из кнопок размеров
 tg.MainButton.show()
 
-tg.MainButton.setText('добавить в корзину')
+tg.MainButton.setText('добавить')
 
 // tg.MainButton.onClick(window.location.href = 'index.html')
 
@@ -168,6 +168,14 @@ tg.MainButton.onClick(function(){
         tg.showAlert("выберите размер")
         return
     }
-    tg.MainButton.setParams(text('в корзину'))
+    //меняет название кнопки
+    if (tg.MainButton.text != 'в корзину'){
+    tg.MainButton.setText('в корзину')
+    }
+    //переход в корзину
+    if(tg.MainButton.text == 'в корзину'){
+        window.location.href = 'basket.html'
+    }
+
 })
 
