@@ -83,28 +83,28 @@ function renderInfoProduct(product) {
         <div class="radio-tile-group">
 
             <div class="input-container">
-                <input id="S" type="radio" name="radio" value="S">
+                <input class="radio-button" id="S" type="radio" name="radio" value="S">
                 <div class="radio-tile">
                   <label for="S">S</label>
                 </div>
             </div>
             
             <div class="input-container">
-                <input id="M" type="radio" name="radio" value="M">
+                <input class="radio-button" id="M" type="radio" name="radio" value="M">
                 <div class="radio-tile">
                   <label for="M">M</label>
                 </div>
             </div> 
 
             <div class="input-container">
-                <input id="L" type="radio" name="radio" value="L">
+                <input class="radio-button" id="L" type="radio" name="radio" value="L">
                 <div class="radio-tile">
                   <label for="L">L</label>
                 </div>
             </div> 
 
             <div class="input-container">
-                <input id="XL" type="radio" name="radio" value="Xl">
+                <input class="radio-button" id="XL" type="radio" name="radio" value="Xl">
                 <div class="radio-tile">
                   <label for="XL">XL</label>
                 </div>
@@ -151,6 +151,12 @@ tg.BackButton.onClick(function(){
 
 //главная кнопка
 tg.MainButton.onClick(function(){
-    window.location.href = 'index.html'
+    let radio = document.querySelectorAll(".radio-button")
+    for (let i = 0; i < radio.length; i++){
+        if(radio[i].checked){
+            console.log (radio[i].value)
+            break
+        }
+    }
 })
 
