@@ -152,11 +152,16 @@ tg.BackButton.onClick(function(){
 //главная кнопка
 tg.MainButton.onClick(function(){
     let radio = document.querySelectorAll(".radio-button")
+    let size = undefined
     for (let i = 0; i < radio.length; i++){
         if(radio[i].checked){
-            console.log (radio[i].value)
+            size = radio[i].value
+            console.log(size)
             break
         }
+    }
+    if(size == undefined){
+        tg.showAlert('выберете размер'[function(){console.log('main button clicked without size')}])
     }
 })
 
