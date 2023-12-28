@@ -142,5 +142,18 @@ tg.MainButton.show()
 
 tg.BackButton.show()
 
-tg.BackButton.onClick(function(){window.location.href = 'index.html'})
+tg.enableClosingConfirmation()
+
+//кнопка назад
+tg.BackButton.onClick(function(){
+    window.location.href = 'index.html'
+})
+
+//главная кнопка
+tg.MainButton.onClick(function(){
+    tg.PopupParams.title("BOOOO")
+    tg.PopupParams.text("scaryyyy message")
+    tg.PopupParams.buttons()
+    tg.showPopup(params[{"type":"close"}])
+})
 
