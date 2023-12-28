@@ -160,6 +160,7 @@ tg.MainButton.onClick(function(){
             break
         }
     }
+    //если не выбран размер выводит сообщение что нужно выбрать
     if(size == undefined){
         console.log ('didnt choose size')
         tg.showAlert("выберите размер")
