@@ -151,9 +151,6 @@ tg.BackButton.onClick(function(){
 
 //главная кнопка
 tg.MainButton.onClick(function(){
-    tg.PopupParams.title("BOOOO")
-    tg.PopupParams.text("scaryyyy message")
-    tg.PopupParams.buttons()
-    tg.showPopup(params[{"type":"close"}])
+    window.location.href = 'index.html'
 })
 
