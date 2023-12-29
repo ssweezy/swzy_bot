@@ -171,10 +171,12 @@ tg.MainButton.onClick(function(){
     //меняет название кнопки
     if (tg.MainButton.text != 'в корзину'){
     tg.MainButton.setText('в корзину')
+    return
     }
     //переход в корзину
     if(tg.MainButton.text == 'в корзину'){
         window.location.href = 'basket.html'
+        return
     }
 
 })
