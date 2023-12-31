@@ -2,6 +2,8 @@
 //==========================================
 import { ERROR_SERVER, PRODUCT_INFORMATION_NOT_FOUND } from './constants.js';
 import { 
+    getBasketLocalStorage,
+    setBasketLocalStorage,
     showErrorMessage
     // checkingRelevanceValueBasket
 } from './utils.js';
@@ -12,7 +14,7 @@ let productsData = [];
 
 getProducts();
 
-
+// получение продукта из бд
 async function getProducts() {
     try {
 
@@ -32,7 +34,7 @@ async function getProducts() {
     }
 }
 
-
+// находит айди из ссылки
 function getParameterFromURL(parameter) {
     const urlParams = new URLSearchParams(window.location.search);
     return urlParams.get(parameter);
@@ -170,11 +172,20 @@ tg.MainButton.onClick(function(){
     }
     //меняет название кнопки
     if (tg.MainButton.text != 'в корзину'){
-    tg.MainButton.setText('в корзину')
-    return
+        const id = getParameterFromURL('id')
+        const basket = getBasketLocalStorage()
+        
+        if(basket.includes(id)) {return}
+        basket.push(id)
+        setBasketLocalStorage(basket)
+
+        tg.MainButton.setText('в корзину')
+        return
     }
     //переход в корзину
     if(tg.MainButton.text == 'в корзину'){
+        
+        //сам переход
         window.location.href = 'basket.html'
         return
     }

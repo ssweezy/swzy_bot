@@ -20,9 +20,9 @@ export function getBasketLocalStorage() {
 
 // Запись id товаров в LS
 export function setBasketLocalStorage(basket) {
-    const basketCount = document.querySelector('.basket__count');
+    const basketCount = document.querySelector('.amount');
     localStorage.setItem('basket', JSON.stringify(basket));
-    basketCount.textContent = basket.length;
+    basketCount.textContent = `кол-во: ${basket.length}`;
 }
 
 // Проверка, существует ли товар указанный в LS 
