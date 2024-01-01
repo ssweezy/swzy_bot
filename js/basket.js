@@ -62,10 +62,10 @@ function loadProductBasket(data) {
 }
 
 function delProductBasket(event) {
-    const targetButton = event.target.closest('.cart__del-card');
+    const targetButton = event.target.closest('.del-block');
     if (!targetButton) return;
 
-    const card = targetButton.closest('.cart__product');
+    const card = targetButton.closest('.offer');
     const id = card.dataset.productId;
     const basket = getBasketLocalStorage();
 
@@ -77,31 +77,45 @@ function delProductBasket(event) {
 
 function renderProductsBasket(arr) {
     arr.forEach(card => {
-        const { id, img, title, price, discount } = card;
-        const priceDiscount = price - ((price * discount) / 100);
+        const {id, img1, title, color, price} = card;
 
         const cardItem = 
         `
-        <div class="cart__product" data-product-id="${id}">
-            <div class="cart__img">
-                <img src="./images/${img}" alt="${title}">
+        <div class="offer" data-product-id="${id}">
+            <img src=${img1}>
+            <div class="info-container">
+                <span class="name">${title}</span>
+                <span class="color">цвет: ${color}</span>
+                <span class="price">${price} rub</span>
             </div>
-            <div class="cart__title">${title}</div>
-            <div class="cart__block-btns">
-                <div class="cart__minus">-</div>
-                <div class="cart__count">1</div>
-                <div class="cart__plus">+</div>
+            <div class="del-block">
+                <button class="del-btn"><ion-icon name="trash-outline" class="trash"></ion-icon></button> 
             </div>
-            <div class="cart__price">
-                <span>${price}</span>₽
-            </div>
-            <div class="cart__price-discount">
-                <span>${priceDiscount}</span>₽
-            </div>
-            <div class="cart__del-card">X</div>
         </div>
         `;
 
         cart.insertAdjacentHTML('beforeend', cardItem);
     });
 }
+
+
+//WEBAPP часть
+
+let tg = window.Telegram.WebApp
+
+tg.MainButton.setText('купить')
+
+tg.MainButton.show()
+
+tg.BackButton.show()
+
+tg.enableClosingConfirmation()
+
+//главная кнопка
+tg.MainButton.onClck(function(){
+    return
+})
+
+tg.BackButton.onClck(function(){
+    window.location.href = 'index.html'
+})

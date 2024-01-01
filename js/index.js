@@ -57,7 +57,7 @@ function renderStartPage(data) {
     const arrCards = data.slice(0, COUNT_SHOW_CARDS_CLICK);
     createCards(arrCards);
 
-    // checkingRelevanceValueBasket(data);
+    checkingRelevanceValueBasket(data);
 
     // const basket = getBasketLocalStorage();
     // checkingActiveButtons(basket);
