@@ -173,7 +173,6 @@ tg.MainButton.onClick(function(){
     //меняет название кнопки
     if (tg.MainButton.text != 'в корзину'){
         const id = getParameterFromURL('id')
-        const {size} = data.find(card => card.id === id)
         const basket = getBasketLocalStorage()
         
         if(basket.includes(id) ) return
