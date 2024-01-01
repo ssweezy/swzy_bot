@@ -82,7 +82,7 @@ function renderProductsBasket(arr) {
         const cardItem = 
         `
         <div class="offer" data-product-id="${id}">
-            <img src=${img1}>
+            <img src="./card_photos/${img1}">
             <div class="info-container">
                 <span class="name">${title}</span>
                 <span class="color">цвет: ${color}</span>
