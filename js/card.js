@@ -175,7 +175,7 @@ tg.MainButton.onClick(function(){
         const id = getParameterFromURL('id')
         const basket = getBasketLocalStorage()
         
-        if(basket.includes(id)) return;
+        // if(basket.includes(id)) return;
         basket.push(id)
         basket.push(size)
         setBasketLocalStorage(basket)
