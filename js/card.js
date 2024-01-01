@@ -175,12 +175,12 @@ tg.MainButton.onClick(function(){
         const id = getParameterFromURL('id')
         const basket = getBasketLocalStorage()
         
-        // if(basket.includes(id)) return;
+        if(basket.includes(id)) return;
+        tg.MainButton.setText('в корзину')
         basket.push(id)
         basket.push(size)
         setBasketLocalStorage(basket)
 
-        tg.MainButton.setText('в корзину')
         return
     }
     //переход в корзину
