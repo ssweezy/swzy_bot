@@ -112,10 +112,10 @@ tg.BackButton.show()
 tg.enableClosingConfirmation()
 
 //главная кнопка
-tg.MainButton.onClck(function(){
+tg.MainButton.onClick(function(){
     return
 })
 
-tg.BackButton.onClck(function(){
+tg.BackButton.onClick(function(){
     window.location.href = 'index.html'
 })
