@@ -3,7 +3,9 @@
 import { ERROR_SERVER, PRODUCT_INFORMATION_NOT_FOUND } from './constants.js';
 import { 
     getBasketLocalStorage,
+    getSizeLocalStorage,
     setBasketLocalStorage,
+    setSizeLocalStorage,
     showErrorMessage
     // checkingRelevanceValueBasket
 } from './utils.js';
@@ -174,12 +176,14 @@ tg.MainButton.onClick(function(){
     if (tg.MainButton.text != 'в корзину'){
         const id = getParameterFromURL('id')
         const basket = getBasketLocalStorage()
+        const sizes = getSizeLocalStorage()
         
         if(basket.includes(id)) return;
         tg.MainButton.setText('в корзину')
         basket.push(id)
-        basket.push(size)
+        sizes.push(size)
         setBasketLocalStorage(basket)
+        setSizeLocalStorage(sizes)
 
         return
     }

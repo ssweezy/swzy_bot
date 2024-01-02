@@ -43,8 +43,8 @@ function loadProductBasket(data) {
         return;
     }
 
-    checkingRelevanceValueBasket(data);
-    const basket = getBasketLocalStorage();
+    // checkingRelevanceValueBasket(data);
+    const basket = getBasketLocalStorage(); 
 
     if(!basket || !basket.length) {
         showErrorMessage(NO_ITEMS_CART)
