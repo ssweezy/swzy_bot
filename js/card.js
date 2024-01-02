@@ -142,11 +142,11 @@ let tg = window.Telegram.WebApp
 tg.MainButton.show()
 tg.BackButton.show()
 
-tg.MainButton.setText('добавить')
+tg.ThemeParams.secondary_bg_color = "#141413"
+tg.MainButton.color = "#7A5FFF"
+tg.MainButton.textColor = "#fff7f7f2"
 
-ThemeParams.secondary_bg_color = "#141413"
-ThemeParams.button_color = "#7A5FFF"
-ThemeParams.button_text_color = "#fff7f7f2"
+tg.MainButton.setText('добавить')
 
 //массив из кнопок размеров
 
