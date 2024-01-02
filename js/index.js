@@ -147,20 +147,19 @@ function createCards(data) {
 //WEBAPP ЧАСТЬ
 let tg = window.Telegram.WebApp
 
-ThemeParams.secondary_bg_color("#141413")
-ThemeParams.button_color("#7A5FFF")
-ThemeParams.button_text_color("#fff7f7f2")
+tg.expand()
+tg.BackButton.hide()
+
+ThemeParams.secondary_bg_color = "#141413"
+ThemeParams.button_color = "#7A5FFF"
+ThemeParams.button_text_color = "#fff7f7f2"
 
 tg.enableClosingConfirmation()
 
-if (tg.MainButton.isVisible){
-    tg.MainButton.hide()
-}
-
-tg.BackButton.hide()
+if (tg.MainButton.isVisible) tg.MainButton.hide()
+    
 
 
-tg.requestWriteAccess(() => {return})
-tg.requestContact(() => {return})
-tg.expand()
-tg.ready()
+
+
+
