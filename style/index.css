@@ -39,7 +39,8 @@ a {
 
 .basket-icon {
     position: absolute;
-    left: 5vw;
+    top: 2vh; left: 3vw;
+    
 }
 
 .categories{
