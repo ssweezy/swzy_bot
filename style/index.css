@@ -16,6 +16,10 @@ body{
     /* width:392px;
     height: 846px;
     border: solid black 1px; */
+
+    --bg-color: var(--tg-theme-secondary-bg-color, #141414c3);
+    --bt-color: var(--tg-theme-button-color, #7A5FFF);
+    --bt-text-color: var(--tg-theme-button-text-color, #fff7f7f2)
 }
  
 h1 {
@@ -101,3 +105,4 @@ img {
     box-shadow: 0 5px #a6b1e12d;
     cursor: pointer;
 }
+
