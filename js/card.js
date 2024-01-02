@@ -184,9 +184,9 @@ tg.MainButton.onClick(function(){
         sizes.push(size)
         console.log(basket)
         console.log(sizes)
-
-        setBasketLocalStorage(basket)
         setSizeLocalStorage(sizes)
+        setBasketLocalStorage(basket)
+        
 
         return
     }

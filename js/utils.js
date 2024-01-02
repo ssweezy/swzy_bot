@@ -12,16 +12,11 @@ export function showErrorMessage(message) {
     categories.insertAdjacentHTML('afterend', msg);
 }
 
+
 // Получение id из LS
 export function getBasketLocalStorage() {
     const cartDataJSON = localStorage.getItem('basket');
     return cartDataJSON ? JSON.parse(cartDataJSON) : [];
-}
-
-// Получение size из LS
-export function getSizeLocalStorage() {
-    const sizeDataJSON = localStorage.getItem('sizes');
-    return sizeDataJSON ? JSON.parse(sizeDataJSON) : [];
 }
 
 // Запись id товаров в LS
@@ -31,10 +26,18 @@ export function setBasketLocalStorage(basket) {
     basketCount.textContent = `кол-во: ${basket.length}`;
 }
 
+
+// Получение size из LS
+export function getSizeLocalStorage() {
+    const sizeDataJSON = localStorage.getItem('sizes');
+    return sizeDataJSON ? JSON.parse(sizeDataJSON) : [];
+}
+
 // Запись size товаров в LS
 export function setSizeLocalStorage(sizes) {
-    localStorage.setItem('sizes', JSON.stringify(sizes));
+    localStorage.setItem('sizes', JSON.stringify(sizes))
 }
+
 
 // Проверка, существует ли товар указанный в LS 
 // (если например пару дней не заходил юзер, а товар, который у него в корзине, уже не существует)

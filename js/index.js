@@ -46,6 +46,7 @@ async function getProducts() {
         showErrorMessage(ERROR_SERVER);
         console.log(err.message);
     }
+    
 }
 
 function renderStartPage(data) {

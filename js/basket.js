@@ -6,7 +6,8 @@ import {
     setBasketLocalStorage,
     getBasketLocalStorage,
     checkingRelevanceValueBasket,
-    getSizeLocalStorage
+    getSizeLocalStorage,
+    setSizeLocalStorage
 } from './utils.js';
 
 const cart = document.querySelector('.cart');
@@ -44,7 +45,7 @@ function loadProductBasket(data) {
         return;
     }
 
-    // checkingRelevanceValueBasket(data);
+    checkingRelevanceValueBasket(data);
     const basket = getBasketLocalStorage(); 
 
     if(!basket || !basket.length) {
@@ -68,10 +69,14 @@ function delProductBasket(event) {
 
     const card = targetButton.closest('.offer');
     const id = card.dataset.productId;
+    const size = card.dataset.productSize
     const basket = getBasketLocalStorage();
+    const sizes = getSizeLocalStorage()
 
     const newBasket = basket.filter(item => item !== id);
+    const newSizes = sizes.filter(item => item !== size)
     setBasketLocalStorage(newBasket);
+    setSizeLocalStorage(newSizes)
 
     getProducts()
 }
@@ -81,11 +86,12 @@ function renderProductsBasket(arr) {
         const {id, img1, title, color, price} = card;
         const basket = getBasketLocalStorage();
         const sizes = getSizeLocalStorage()
+        console.log(sizes)
         const size = sizes[basket.indexOf(id)]
-        console.log(size)
+        
         const cardItem = 
         `
-        <div class="offer" data-product-id="${id}">
+        <div class="offer" data-product-id="${id}" data-product-size="${size}">
             <img src="./card_photos/${img1}">
             <div class="info-container">
                 <span class="name">${title}</span>
