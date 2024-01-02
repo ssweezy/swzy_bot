@@ -78,13 +78,16 @@ function delProductBasket(event) {
 function renderProductsBasket(arr) {
     arr.forEach(card => {
         const {id, img1, title, color, price} = card;
-
+        const basket = getBasketLocalStorage();
+        const size = basket[basket.indexOf(id) + 1]
+        console.log(size)
         const cardItem = 
         `
         <div class="offer" data-product-id="${id}">
             <img src="./card_photos/${img1}">
             <div class="info-container">
                 <span class="name">${title}</span>
+                <span class="size">размер: ${size}</span>
                 <span class="color">цвет: ${color}</span>
                 <span class="price">${price} rub</span>
             </div>

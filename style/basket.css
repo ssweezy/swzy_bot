@@ -74,13 +74,22 @@ img{
     margin: 1vh 0 0 0;
 }
 
+.size {
+    display: block;
+    font-family: 'Jost', sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    color: #888888; 
+    margin: 0vh 0 0 0;
+}
+
 .color {
     display: block;
     font-family: 'Jost', sans-serif;
     font-weight: bold;
     font-size: 1em;
     color: #888888; 
-    margin: 1vh 0 0 0;
+    margin: 0vh 0 0 0;
 }
 
 .price {
