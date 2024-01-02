@@ -182,6 +182,9 @@ tg.MainButton.onClick(function(){
         tg.MainButton.setText('в корзину')
         basket.push(id)
         sizes.push(size)
+        console.log(basket)
+        console.log(sizes)
+
         setBasketLocalStorage(basket)
         setSizeLocalStorage(sizes)
 
