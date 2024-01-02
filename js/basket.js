@@ -88,7 +88,7 @@ function renderProductsBasket(arr) {
         const sizes = getSizeLocalStorage()
         console.log(basket)
         console.log(sizes)
-        const size = sizes[basket.indexOf(id)]
+        const size = sizes[basket.indexOf(String(id))]
         console.log(size)
 
         const cardItem = 
