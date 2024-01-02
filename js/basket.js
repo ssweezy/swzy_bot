@@ -69,12 +69,12 @@ function delProductBasket(event) {
 
     const card = targetButton.closest('.offer');
     const id = card.dataset.productId;
-    const size = card.dataset.productSize
+    const size = basket.indexOf(id)
     const basket = getBasketLocalStorage();
     const sizes = getSizeLocalStorage()
 
     const newBasket = basket.filter(item => item !== id);
-    const newSizes = sizes.filter(item => item !== size)
+    const newSizes = sizes.splice(indexOf(id), 1)
     setBasketLocalStorage(newBasket);
     setSizeLocalStorage(newSizes)
 
@@ -86,12 +86,14 @@ function renderProductsBasket(arr) {
         const {id, img1, title, color, price} = card;
         const basket = getBasketLocalStorage();
         const sizes = getSizeLocalStorage()
+        console.log(basket)
         console.log(sizes)
         const size = sizes[basket.indexOf(id)]
-        
+        console.log(size)
+
         const cardItem = 
         `
-        <div class="offer" data-product-id="${id}" data-product-size="${size}">
+        <div class="offer" data-product-id="${id}">
             <img src="./card_photos/${img1}">
             <div class="info-container">
                 <span class="name">${title}</span>
