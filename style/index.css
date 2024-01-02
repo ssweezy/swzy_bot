@@ -37,6 +37,11 @@ a {
     color: #A6B1E1;
 }
 
+.basket-icon {
+    position: absolute;
+    left: 5vw;
+}
+
 .categories{
     flex-wrap: nowrap;
     text-align: center;
