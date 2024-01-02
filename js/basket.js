@@ -5,7 +5,8 @@ import {
     showErrorMessage,
     setBasketLocalStorage,
     getBasketLocalStorage,
-    checkingRelevanceValueBasket
+    checkingRelevanceValueBasket,
+    getSizeLocalStorage
 } from './utils.js';
 
 const cart = document.querySelector('.cart');
@@ -79,7 +80,8 @@ function renderProductsBasket(arr) {
     arr.forEach(card => {
         const {id, img1, title, color, price} = card;
         const basket = getBasketLocalStorage();
-        const size = basket[basket.indexOf(id) + 1]
+        const sizes = getSizeLocalStorage()
+        const size = sizes[basket.indexOf(id)]
         console.log(size)
         const cardItem = 
         `
