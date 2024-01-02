@@ -69,14 +69,14 @@ function delProductBasket(event) {
 
     const card = targetButton.closest('.offer');
     const id = card.dataset.productId;
-    const size = basket.indexOf(id)
     const basket = getBasketLocalStorage();
     const sizes = getSizeLocalStorage()
 
+    sizes.splice(basket.indexOf(id), 1)
     const newBasket = basket.filter(item => item !== id);
-    const newSizes = sizes.splice(indexOf(id), 1)
+     
     setBasketLocalStorage(newBasket);
-    setSizeLocalStorage(newSizes)
+    setSizeLocalStorage(sizes)
 
     getProducts()
 }
