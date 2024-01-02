@@ -116,23 +116,24 @@ function renderProductsBasket(arr) {
 
 let tg = window.Telegram.WebApp
 
-ThemeParams.secondary_bg_color = "#141413"
-ThemeParams.button_color = "#7A5FFF"
-ThemeParams.button_text_color = "#fff7f7f2"
+tg.MainButton.show()
+tg.BackButton.show()
 
 tg.MainButton.setText('купить')
 
-tg.MainButton.show()
-
-tg.BackButton.show()
+ThemeParams.secondary_bg_color = "#141413"
+ThemeParams.button_color = "#7A5FFF"
+ThemeParams.button_text_color = "#fff7f7f2"
 
 tg.enableClosingConfirmation()
 
 //главная кнопка
 tg.MainButton.onClick(function(){
+    tg.showAlert("в разработке броуски")
     return
 })
 
 tg.BackButton.onClick(function(){
     window.location.href = 'index.html'
+    return
 })

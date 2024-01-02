@@ -139,18 +139,23 @@ function renderInfoProduct(product) {
 //WEBAPP ЧАСТЬ
 let tg = window.Telegram.WebApp
 
+tg.MainButton.show()
+tg.BackButton.show()
+
+tg.MainButton.setText('добавить')
+
 ThemeParams.secondary_bg_color = "#141413"
 ThemeParams.button_color = "#7A5FFF"
 ThemeParams.button_text_color = "#fff7f7f2"
 
 //массив из кнопок размеров
-tg.MainButton.show()
 
-tg.MainButton.setText('добавить')
+
+
 
 // tg.MainButton.onClick(window.location.href = 'index.html')
 
-tg.BackButton.show()
+
 
 tg.enableClosingConfirmation()
 

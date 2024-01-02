@@ -148,7 +148,6 @@ function createCards(data) {
 let tg = window.Telegram.WebApp
 
 tg.expand()
-tg.BackButton.hide()
 
 ThemeParams.secondary_bg_color = "#141413"
 ThemeParams.button_color = "#7A5FFF"
@@ -156,10 +155,11 @@ ThemeParams.button_text_color = "#fff7f7f2"
 
 tg.enableClosingConfirmation()
 
-if (tg.MainButton.isVisible) tg.MainButton.hide()
-    
+if (tg.MainButton.isVisible){
+    tg.MainButton.hide()
+}
 
-
+tg.BackButton.hide()
 
 
 
