@@ -3,13 +3,13 @@
 
 // Вывод ошибки
 export function showErrorMessage(message) {
-    const minibody = document.querySelector('.minibody')
+    const categories = document.querySelector('.categories')
     const msg = 
         `<div class="error">
             <p>${message}</p>
             <p><a href="index.html">Перейти к списку товаров!</a></p>
         </div>`;
-    minibody.insertAdjacentHTML('afterend', msg);
+    categories.insertAdjacentHTML('afterend', msg);
 }
 
 // Получение id из LS
