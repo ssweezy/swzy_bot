@@ -121,9 +121,11 @@ tg.BackButton.show()
 
 tg.MainButton.setText('купить')
 
-tg.ThemeParams.secondary_bg_color = "#141413"
+try{
+    tg.ThemeParams.secondary_bg_color = "#2C2C2C"
+    } catch(err) {console.log(err.message)}
 tg.MainButton.color = "#7A5FFF"
-tg.MainButton.textColor = "#fff7f7f2"
+tg.MainButton.textColor = "#FFF9F9"
 
 tg.enableClosingConfirmation()
 
