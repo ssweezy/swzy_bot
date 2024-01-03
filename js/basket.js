@@ -131,7 +131,8 @@ tg.enableClosingConfirmation()
 
 //главная кнопка
 tg.MainButton.onClick(function(){
-    tg.showAlert("в разработке броуски")
+    // tg.showAlert("в разработке броуски")
+    window.location.href = 'offer.html'
     return
 })
 
