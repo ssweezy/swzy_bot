@@ -119,7 +119,7 @@ let tg = window.Telegram.WebApp
 tg.MainButton.show()
 tg.BackButton.show()
 
-tg.MainButton.setText('купить')
+tg.MainButton.setText('подтвердить')
 
 try{
     tg.ThemeParams.secondary_bg_color = "#2C2C2C"
@@ -131,7 +131,6 @@ tg.enableClosingConfirmation()
 
 //главная кнопка
 tg.MainButton.onClick(function(){
-    tg.openInvoice()
     tg.showAlert("в разработке броуски")
     return
 })

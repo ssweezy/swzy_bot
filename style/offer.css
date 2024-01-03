@@ -1,0 +1,120 @@
+@font-face {
+    font-family:Kish Test Ultra Wide;
+    font-weight: basic;
+    font-style: basic;
+    src: url(/fonts/kishtest-boldultrawide.otf);
+}
+@font-face {
+    font-family:ArcherPro Bold;
+    font-weight: basic;
+    font-style: basic;
+    src: url(/fonts/ArcherPro\ Bold.otf);
+}
+@font-face {
+    font-family: Montserrat Alternates SemiBold;
+    font-weight: basic;
+    font-style: basic;
+    src: url(/fonts/MontserratAlternates-SemiBold.ttf);
+}
+
+
+body {
+    background-color:#F3F3F3;
+    font-family: "kishtest-boldultrawide.otf";
+    font-size: 1em;
+}
+
+h1 {
+    font-family: Kish Test Ultra Wide;
+    color: #A6B1E1;
+    background-color: #F3F3F3;
+    font-size: 300%;
+    text-align: center;
+    /* cursor: pointer; */
+    padding: 2vh 0 2vh 0;
+    margin: 0vh 0 0vh 0;
+    position: sticky;
+    top: 0px;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #A6B1E1; 
+}
+
+.title {
+    font-family: Montserrat Alternates SemiBold;
+    font-size: 2em;
+    color: #818181;
+    display: block;
+    margin: 2vh 0 0 3vw;
+}
+
+
+.input-container{
+    font-family: Montserrat Alternates SemiBold;
+    font-size: 1.4em;
+    color: #818181;
+    margin: 0 0 0 4vw;
+}
+
+.forms{
+    font-family: Montserrat Alternates SemiBold;
+    font-size: 1.3em;
+    color: #818181;
+    display: block;
+    margin: 2vh 0 0 3vw;
+}
+
+
+.text-field {
+    margin-bottom: 1rem;
+  }
+
+  .text-field__label {
+    font-family: Montserrat Alternates SemiBold;
+    font-size: 1.3em;
+    color: #818181;
+    display: block;
+    margin: 2vh 0 1vh 3vw;    
+  }
+
+  .text-field__input {
+    display: block;
+    width: 50vw;
+    height: 4vh;
+    margin: 0 0 0 2vw;
+    padding: 0.4rem;
+    padding-left: 0.8rem;
+    font-family: Montserrat Alternates SemiBold;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #818181;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #bdbdbd;
+    border-radius: 0.9rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+
+  .text-field__input::placeholder { 
+    color: #212529;
+    opacity: 0.4;
+  }
+
+  .text-field__input:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #bdbdbd;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+  }
+
+.total{
+    font-family: Montserrat Alternates SemiBold;
+    font-size: 2.2rem;
+    color: #818181;
+    margin: 0 0 0 3vw;
+}

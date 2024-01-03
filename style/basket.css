@@ -10,8 +10,14 @@
     font-style: basic;
     src: url(/fonts/ArcherPro\ Bold.otf);
 }
+@font-face {
+    font-family: Montserrat Alternates SemiBold;
+    font-weight: basic;
+    font-style: basic;
+    src: url(/fonts/MontserratAlternates-SemiBold.ttf);
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@700&display=swap');
+
 body {
     background-color:#F3F3F3;
     font-family: "kishtest-boldultrawide.otf";
@@ -38,13 +44,13 @@ a {
 }
 
 span.amount {
-    font-family: Montserrat Alternates;
+    font-family: Montserrat Alternates SemiBold;
     font-size: 1rem;
     color: hsl(0, 0%, 80%);
     text-align: left;
     margin-top: 2vh;
     margin-bottom: 5vh;
-    margin-left: 3vw;
+    margin-left: 5vw;
 }
 
 .offer {
@@ -98,7 +104,7 @@ img{
     font-family: ArcherPro Bold;
     font-size: 1.4em;
     color: #888888;
-    margin: 1vh 0vw 0 0vw;    
+    margin: 0.5vh 0vw 0 0vw;    
 }
 
 .del-block {

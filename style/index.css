@@ -3,6 +3,13 @@
     src: url(/fonts/kishtest-boldultrawide.otf);
 }
 
+@font-face {
+    font-family: Montserrat Alternates SemiBold;
+    font-weight: basic;
+    font-style: basic;
+    src: url(/fonts/MontserratAlternates-SemiBold.ttf);
+}
+
 html {
     transition: 0.5s 1s;
     scroll-behavior: smooth;
@@ -60,7 +67,7 @@ a {
     border-radius: 30px;
     border: none;
     background-color: #A6B1E16B;
-    font-family: Montserrat Alternates;
+    font-family: Montserrat Alternates SemiBold;
     font-size: 1.2em;
     text-decoration: none;
     color: #818181;
@@ -79,8 +86,8 @@ a#button2{
 }
 
 .topic {
-    font-family: Montserrat Alternates Bold;
-    font-size: 150%;
+    font-family: Montserrat Alternates SemiBold;
+    font-size: 120%;
     color: hsl(0, 0%, 80%);
     text-align: left;
     margin-top: 2vh;

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/style/offer.css">
+    <title>Document</title>
+    <script src="https://telegram.org/js/telegram-web-app.js" defer></script>
+    <script src="./js/offer.js" type="module" defer></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" defer></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js" defer></script>
+    
+</head>
+<body>
+    <h1><a href="index.html" class="fade">OFFER!</a></h1>
+    <div class="offer">
+       <span class="title" id="1">способ оплаты</span>
+        <div class="input-container">
+            <input class="radio-button-payment" id="card-transfer" type="radio" name="payment" value="card-transfer">
+            <label for="card-transfer">переводом</label>
+        </div> 
+        <div class="input-container">
+            <input class="radio-button-payment" id="card-payment" type="radio" name="payment" value="card-payment">
+            <label for="card-payment">картой через тг</label>
+        </div> 
+
+
+        <span class="title" id="2">получение</span>
+        <div class="input-container">
+            <input class="radio-button-shipping" id="delivery" type="radio" name="shipping" value="delivery">
+            <label for="delivery">доставка</label>
+        </div> 
+        <div class="input-container">
+            <input class="radio-button-shipping" id="self-taking" type="radio" name="shipping" value="self-taking">
+            <label for="self-taking">самовывоз</label>
+        </div>
+
+        <div class="text-field">
+            <label class="text-field__label" for="name">ваше имя</label>
+            <input class="text-field__input" type="text" name="name" id="login" placeholder="имя">
+        </div>
+
+        <div class="text-field">
+            <label class="text-field__label" for="name">адрес</label>
+            <input class="text-field__input" type="text" name="name" id="login" placeholder="*если выбрана доставка">
+        </div>
+
+        <div class="text-field">
+            <label class="text-field__label" for="name">телефон</label>
+            <input class="text-field__input" type="text" name="name" id="login" placeholder="номер">
+        </div>
+
+        <span class="total">к оплате:</span>
+    </div>
+
+    
+</body>
+</html>
