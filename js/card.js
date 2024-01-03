@@ -148,6 +148,7 @@ tg.ThemeParams.secondary_bg_color = "#2C2C2C"
 tg.MainButton.color = "#7A5FFF"
 tg.MainButton.textColor = "#FFF9F9"
 
+// проверка есть ли товар в корзине и от этого меняет текст MainButton
 if (getBasketLocalStorage().includes(getParameterFromURL('id'))){
     tg.MainButton.setText('перейти в корзину')
     } else{
@@ -172,6 +173,15 @@ tg.MainButton.onClick(function(){
             break
         }
     }
+
+    //переход в корзину
+    if(tg.MainButton.text == 'перейти в корзину'){
+        
+        //сам переход
+        window.location.href = 'basket.html'
+        return
+    }
+
     //если не выбран размер выводит сообщение что нужно выбрать
     if(size == undefined){
         console.log ('didnt choose size')
@@ -196,13 +206,6 @@ tg.MainButton.onClick(function(){
 
         return
     }
-    //переход в корзину
-    if(tg.MainButton.text == 'перейти в корзину'){
-        
-        //сам переход
-        window.location.href = 'basket.html'
-        return
-    }
-
+    
 })
 
