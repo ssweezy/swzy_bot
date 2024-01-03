@@ -131,6 +131,7 @@ tg.enableClosingConfirmation()
 
 //главная кнопка
 tg.MainButton.onClick(function(){
+    tg.openInvoice()
     tg.showAlert("в разработке броуски")
     return
 })
