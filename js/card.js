@@ -148,7 +148,11 @@ tg.ThemeParams.secondary_bg_color = "#2C2C2C"
 tg.MainButton.color = "#7A5FFF"
 tg.MainButton.textColor = "#FFF9F9"
 
-tg.MainButton.setText('добавить')
+if (getBasketLocalStorage().includes(getParameterFromURL('id'))){
+    tg.MainButton.setText('перейти в корзину')
+    } else{
+        tg.MainButton.setText('добавить')
+    }
 
 tg.enableClosingConfirmation()
 
@@ -175,13 +179,13 @@ tg.MainButton.onClick(function(){
         return
     }
     //меняет название кнопки
-    if (tg.MainButton.text != 'в корзину'){
+    if (tg.MainButton.text != 'перейти в корзину'){
         const id = getParameterFromURL('id')
         const basket = getBasketLocalStorage()
         const sizes = getSizeLocalStorage()
         
         if(basket.includes(id)) return;
-        tg.MainButton.setText('в корзину')
+        tg.MainButton.setText('перейти в корзину')
         basket.push(id)
         sizes.push(size)
         console.log(basket)
@@ -193,7 +197,7 @@ tg.MainButton.onClick(function(){
         return
     }
     //переход в корзину
-    if(tg.MainButton.text == 'в корзину'){
+    if(tg.MainButton.text == 'перейти в корзину'){
         
         //сам переход
         window.location.href = 'basket.html'
