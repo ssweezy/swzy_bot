@@ -10,25 +10,6 @@ import {
 } from './utils.js';
 
 
-function renderProductsBasket(arr) {
-    arr.forEach(card => {
-        const {id, title, color, price} = card;
-        const basket = getBasketLocalStorage();
-        const sizes = getSizeLocalStorage()
-        console.log(basket)
-        console.log(sizes)
-        const size = sizes[basket.indexOf(String(id))]
-        console.log(size)
-
-        item.push(JSON.stringify({
-            "id":id,
-            "title":title,
-            "color":color,
-            "size":size,
-            "price":price
-        }))
-    })}    
-
 
 let tg = window.Telegram.WebApp
 
@@ -41,7 +22,7 @@ try{
 tg.MainButton.setText("купить")
 tg.MainButton.show()
 
-tg.MainButton.onClick(function(){
+tg.MainButton.onClick(async function(){
     // способ покупки
     let radioPayment = document.querySelectorAll(".radio-button-payment")
     let payment = undefined
@@ -62,6 +43,7 @@ tg.MainButton.onClick(function(){
             break
         }
     }
+
     // имя
     let inputName = document.getElementById('name')
     let name = inputName.value
@@ -77,11 +59,11 @@ tg.MainButton.onClick(function(){
     console.log(phone)
     
     // проверки на пустые поля
-    if (!payment.length){
+    if (payment == undefined){
         tg.showAlert('выберите способ оплаты')
         return
     } 
-    if (!shipping.length){
+    if (shipping == undefined){
         tg.showAlert('выберите доставки')
         return
     }
@@ -109,25 +91,21 @@ tg.MainButton.onClick(function(){
     const res = fetch('../data/products.json');
     
     data = res.json();
+    console.log(`data = ${data}`)
 
+    const basket = getBasketLocalStorage()
     const findProducts = data.filter(item => basket.includes(String(item.id)));
     console.log(findProducts)
     // отгрузка товаров в backend
-    let items = []
-    console.log(items)
     
-    renderProductsBasket(findProducts)
-
-    console.log(items)
-    
-    let order = JSON.stringify({
+    let order = {
         "payment": payment,
         "shipping": shipping,
         "name": name,
         "address": address,
-        "phone": phone,
-        "items": items
-    })
+        "phone": phone
+    }
+
     console.log(order)
     tg.sendData(order)
 })
