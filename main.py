@@ -2,7 +2,7 @@ import asyncio
 import logging
 from aiogram import Bot, Dispatcher, F
 import config as cfg
-from users.commands import func_start
+from users.commands import func_start, func_webapp
 
 
 
@@ -29,6 +29,7 @@ async def main():
     dp.shutdown.register(on_shutdown)
 
     dp.message.register(func_start, F.text == "/start")
+    dp.message.register(func_webapp, F.content_types == "web_app_data")
 
     try:
         await dp.start_polling(bot)

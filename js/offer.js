@@ -46,23 +46,21 @@ tg.MainButton.onClick(function(){
     if (payment == undefined){
         tg.showAlert('выберите способ оплаты')
         return
-    } else {
-        if (shipping == undefined){
-            tg.showAlert('выберите доставки')
-            return
-        }
+    } 
+    if (shipping == undefined){
+        tg.showAlert('выберите доставки')
+        return
     }
+    
 
     if (payment == "card-payment"){
-    let xhrURL = new URL('https://<your_domain>/<createInvoiceLink>');
-    xhrURL.searchParams.set('title');
-    /* ... setting other non-private optional parameters */
-
-    let xhr = new XMLHttpRequest();
-    xhr.open('GET', xhrURL);
-    xhr.send();
-    xhr.onload = function() {
-    tg.openInvoice(JSON.parse(xhr.response).result);
-}
+        tg.showAlert('на данный момент доступна только оплата переводом')
+        return
     }
+    
+    // if (payment == "card-transfer"){
+    //     return
+    // }
+    let item = [payment, shipping]
+    tg.sendData(item)
 })

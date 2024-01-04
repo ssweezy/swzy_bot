@@ -1,10 +1,16 @@
-from aiogram.types import Message, WebAppInfo, InlineKeyboardButton, ReplyKeyboardRemove
-from aiogram.utils.keyboard import InlineKeyboardBuilder  
+from aiogram.types import Message, WebAppInfo, KeyboardButton, ReplyKeyboardRemove, ReplyKeyboardMarkup
+from aiogram.utils.keyboard import KeyboardBuilder  
 from users.db import DataBase
 
 db = DataBase('swzy_db')
+web_app=WebAppInfo(url="https://iridescent-duckanoo-20b130.netlify.app/")
 
-
+keyboard = ReplyKeyboardMarkup(
+    keyboard=[
+        [ReplyKeyboardMarkup(text="open SWZY!", web_app=web_app)]
+    ],
+    resize_keyboard=True
+)
 
 async def func_start(message: Message):
     # проверка добавлен ли человек в базу данных
@@ -13,11 +19,9 @@ async def func_start(message: Message):
                     message.from_user.last_name, message.from_user.url)
 
     # открывается    
-    builder = InlineKeyboardBuilder()
-    builder.add(InlineKeyboardButton(
-        text="открыть swzy!",
-        web_app=WebAppInfo(url="https://iridescent-duckanoo-20b130.netlify.app/"))
-    )
     await message.answer("bo", reply_markup=ReplyKeyboardRemove())
-    await message.answer(f"welcome to SWZY! co ltd", reply_markup=builder.as_markup())
+    await message.answer(f"welcome to SWZY! co ltd", reply_markup=keyboard)
     print(message.text)
+
+async def func_webapp(web_app_message):
+    print(web_app_message)

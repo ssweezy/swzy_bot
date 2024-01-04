@@ -59,6 +59,10 @@ a {
     margin: 0 0 0 4vw;
 }
 
+.input-container input[type=radio]:disabled + label:before {
+	filter: grayscale(100%);
+}
+
 .forms{
     font-family: Montserrat Alternates SemiBold;
     font-size: 1.3em;
