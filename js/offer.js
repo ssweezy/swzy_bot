@@ -9,6 +9,27 @@ import {
     setSizeLocalStorage
 } from './utils.js';
 
+
+function renderProductsBasket(arr) {
+    arr.forEach(card => {
+        const {id, title, color, price} = card;
+        const basket = getBasketLocalStorage();
+        const sizes = getSizeLocalStorage()
+        console.log(basket)
+        console.log(sizes)
+        const size = sizes[basket.indexOf(String(id))]
+        console.log(size)
+
+        item.push(JSON.stringify({
+            "id":id,
+            "title":title,
+            "color":color,
+            "size":size,
+            "price":price
+        }))
+    })}    
+
+
 let tg = window.Telegram.WebApp
 
 try{
@@ -51,26 +72,28 @@ tg.MainButton.onClick(function(){
     let inputPhone = document.getElementById('phone')
     let phone = inputPhone.value
 
+    console.log(name)
+    console.log(address)
     console.log(phone)
-
+    
     // проверки на пустые поля
-    if (payment == undefined){
+    if (!payment.length){
         tg.showAlert('выберите способ оплаты')
         return
     } 
-    if (shipping == undefined){
+    if (!shipping.length){
         tg.showAlert('выберите доставки')
         return
     }
-    if (name == undefined){
+    if (!name.length){
         tg.showAlert('введите имя')
         return
     }
-    if (address == undefined){
+    if (!address.length){
         tg.showAlert('укажите адрес куда доставить')
         return
     }
-    if (phone == undefined){
+    if (!phone.length){
         tg.showAlert('введите номер телефона')
         return
     }
@@ -83,30 +106,19 @@ tg.MainButton.onClick(function(){
     }
     
     // получение списка товаров
-    const findProducts = data.filter(item => basket.includes(String(item.id)));
-    // отгрузка товаров в backend
-    let item = []
-    function renderProductsBasket(arr) {
-        arr.forEach(card => {
-            const {id, img1, title, color, price} = card;
-            const basket = getBasketLocalStorage();
-            const sizes = getSizeLocalStorage()
-            console.log(basket)
-            console.log(sizes)
-            const size = sizes[basket.indexOf(String(id))]
-            console.log(size)
+    const res = fetch('../data/products.json');
     
-            item.push(JSON.stringify({
-                "id":id,
-                "title":title,
-                "color":color,
-                "size":size,
-                "price":price
-            }))
-        })}    
+    data = res.json();
+
+    const findProducts = data.filter(item => basket.includes(String(item.id)));
+    console.log(findProducts)
+    // отгрузка товаров в backend
+    let items = []
+    console.log(items)
+    
     renderProductsBasket(findProducts)
 
-    console.log(item)
+    console.log(items)
     
     let order = JSON.stringify({
         "payment": payment,
@@ -114,7 +126,7 @@ tg.MainButton.onClick(function(){
         "name": name,
         "address": address,
         "phone": phone,
-        "items": item
+        "items": items
     })
     console.log(order)
     tg.sendData(order)
