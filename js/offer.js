@@ -98,13 +98,13 @@ tg.MainButton.onClick(async function(){
     console.log(findProducts)
     // отгрузка товаров в backend
     
-    let order = {
+    let order = [{
         "payment": payment,
         "shipping": shipping,
         "name": name,
         "address": address,
         "phone": phone
-    }
+    }]
 
     console.log(order)
     tg.sendData(order)
