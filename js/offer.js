@@ -42,7 +42,19 @@ tg.MainButton.onClick(function(){
             break
         }
     }
+    // имя
+    let inputName = document.getElementById('name')
+    let name = inputName.value
+    // адрес
+    let inputAddress = document.getElementById('address')
+    let address = inputAddress.value
+    // номер телефона
+    let inputPhone = document.getElementById('phone')
+    let phone = inputPhone.value
 
+    console.log(phone)
+
+    // проверки на пустые поля
     if (payment == undefined){
         tg.showAlert('выберите способ оплаты')
         return
@@ -51,16 +63,60 @@ tg.MainButton.onClick(function(){
         tg.showAlert('выберите доставки')
         return
     }
-    
+    if (name == undefined){
+        tg.showAlert('введите имя')
+        return
+    }
+    if (shipping != undefined || address == undefined){
+        tg.showAlert('укажите адрес куда доставить')
+        return
+    }
+    if (phone == undefined){
+        tg.showAlert('введите номер телефона')
+        return
+    }
 
+    
+    // если вдруг смогли выбрать оплату через тг
     if (payment == "card-payment"){
         tg.showAlert('на данный момент доступна только оплата переводом')
         return
     }
     
-    // if (payment == "card-transfer"){
-    //     return
-    // }
-    let item = [payment, shipping]
-    tg.sendData(item)
+    // получение списка товаров
+    const findProducts = data.filter(item => basket.includes(String(item.id)));
+    // отгрузка товаров в backend
+    let item = []
+    function renderProductsBasket(arr) {
+        arr.forEach(card => {
+            const {id, img1, title, color, price} = card;
+            const basket = getBasketLocalStorage();
+            const sizes = getSizeLocalStorage()
+            console.log(basket)
+            console.log(sizes)
+            const size = sizes[basket.indexOf(String(id))]
+            console.log(size)
+    
+            item.push(JSON.stringify({
+                "id":id,
+                "title":title,
+                "color":color,
+                "size":size,
+                "price":price
+            }))
+        })}    
+    renderProductsBasket(findProducts)
+
+
+    
+    let order = JSON.stringify({
+        "payment": payment,
+        "shipping": shipping,
+        "name": name,
+        "address": address,
+        "phone": phone,
+        "items": item
+    })
+    
+    tg.sendData(order)
 })

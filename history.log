@@ -1070,3 +1070,33 @@ aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: inlin
 2024-01-04 04:29:35,191 INFO Start polling
 2024-01-04 04:29:35,270 INFO Run polling for bot @swzy_bot id=6768503726 - 'SWZY!'
 2024-01-04 04:29:37,558 INFO Update id=683638779 is handled. Duration 390 ms by bot id=6768503726
+2024-01-04 17:05:15,902 INFO Start polling
+2024-01-04 17:05:15,984 INFO Run polling for bot @swzy_bot id=6768503726 - 'SWZY!'
+2024-01-04 17:05:16,135 INFO Update id=683638780 is not handled. Duration 0 ms by bot id=6768503726
+2024-01-04 17:05:16,136 INFO Update id=683638782 is not handled. Duration 0 ms by bot id=6768503726
+2024-01-04 17:05:16,136 INFO Update id=683638783 is not handled. Duration 0 ms by bot id=6768503726
+2024-01-04 17:05:16,551 INFO Update id=683638781 is handled. Duration 420 ms by bot id=6768503726
+2024-01-04 17:05:41,430 INFO Update id=683638784 is not handled. Duration 0 ms by bot id=6768503726
+2024-01-04 17:19:49,076 INFO Polling stopped
+2024-01-04 17:19:49,667 INFO Polling stopped for bot @swzy_bot id=6768503726 - 'SWZY!'
+2024-01-04 17:29:11,399 INFO Start polling
+2024-01-04 17:29:11,475 INFO Run polling for bot @swzy_bot id=6768503726 - 'SWZY!'
+2024-01-04 17:29:17,501 INFO Update id=683638785 is not handled. Duration 0 ms by bot id=6768503726
+2024-01-04 17:29:29,925 INFO Update id=683638786 is not handled. Duration 0 ms by bot id=6768503726
+2024-01-04 17:29:30,524 INFO Update id=683638787 is not handled. Duration 0 ms by bot id=6768503726
+2024-01-04 17:29:30,930 INFO Update id=683638788 is not handled. Duration 0 ms by bot id=6768503726
+2024-01-04 17:30:21,301 INFO Polling stopped
+2024-01-04 17:30:21,664 INFO Polling stopped for bot @swzy_bot id=6768503726 - 'SWZY!'
+2024-01-04 17:34:56,691 INFO Start polling
+2024-01-04 17:34:56,785 INFO Run polling for bot @swzy_bot id=6768503726 - 'SWZY!'
+2024-01-04 17:34:59,360 INFO Update id=683638789 is handled. Duration 453 ms by bot id=6768503726
+2024-01-04 17:55:01,995 INFO Polling stopped
+2024-01-04 17:55:02,611 INFO Polling stopped for bot @swzy_bot id=6768503726 - 'SWZY!'
+2024-01-04 18:13:38,617 INFO Start polling
+2024-01-04 18:13:38,692 INFO Run polling for bot @swzy_bot id=6768503726 - 'SWZY!'
+2024-01-04 18:14:36,537 INFO Update id=683638790 is handled. Duration 468 ms by bot id=6768503726
+2024-01-04 18:14:48,144 INFO Update id=683638791 is handled. Duration 187 ms by bot id=6768503726
+2024-01-04 18:15:23,507 INFO Update id=683638792 is handled. Duration 407 ms by bot id=6768503726
+2024-01-04 18:19:09,841 INFO Update id=683638793 is handled. Duration 297 ms by bot id=6768503726
+2024-01-04 19:17:44,074 INFO Polling stopped
+2024-01-04 19:17:44,710 INFO Polling stopped for bot @swzy_bot id=6768503726 - 'SWZY!'

@@ -23,5 +23,9 @@ async def func_start(message: Message):
     await message.answer(f"welcome to SWZY! co ltd", reply_markup=keyboard)
     print(message.text)
 
+
 async def func_webapp(web_app_message):
-    print(web_app_message)
+    
+    print(web_app_message.web_app_data.data)
+    await web_app_message.answer('web data recieved')
+    await web_app_message.answer(web_app_message.web_app_data.data)
