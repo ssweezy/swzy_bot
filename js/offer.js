@@ -67,7 +67,7 @@ tg.MainButton.onClick(function(){
         tg.showAlert('введите имя')
         return
     }
-    if (shipping != undefined || address == undefined){
+    if (address == undefined){
         tg.showAlert('укажите адрес куда доставить')
         return
     }
