@@ -103,7 +103,8 @@ tg.MainButton.onClick(async function(){
         "shipping": shipping,
         "name": name,
         "address": address,
-        "phone": phone
+        "phone": phone,
+        "items": findProducts
     }]
 
     console.log(order)
