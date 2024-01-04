@@ -1114,3 +1114,11 @@ aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: inlin
 2024-01-04 19:27:28,089 INFO Run polling for bot @swzy_bot id=6768503726 - 'SWZY!'
 2024-01-04 19:27:49,369 INFO Update id=683638796 is handled. Duration 734 ms by bot id=6768503726
 2024-01-04 19:28:21,424 INFO Update id=683638797 is handled. Duration 375 ms by bot id=6768503726
+2024-01-04 19:53:36,264 INFO Update id=683638798 is handled. Duration 687 ms by bot id=6768503726
+2024-01-04 19:53:58,165 INFO Update id=683638799 is handled. Duration 577 ms by bot id=6768503726
+2024-01-04 22:43:15,793 INFO Polling stopped
+2024-01-04 22:43:16,391 INFO Polling stopped for bot @swzy_bot id=6768503726 - 'SWZY!'
+2024-01-04 22:43:20,973 INFO Start polling
+2024-01-04 22:43:21,049 INFO Run polling for bot @swzy_bot id=6768503726 - 'SWZY!'
+2024-01-04 22:43:29,326 INFO Update id=683638800 is handled. Duration 469 ms by bot id=6768503726
+2024-01-04 22:44:19,317 INFO Update id=683638801 is handled. Duration 406 ms by bot id=6768503726

@@ -71,7 +71,7 @@ tg.MainButton.onClick(async function(){
         tg.showAlert('введите имя')
         return
     }
-    if (!address.length){
+    if (address != "self-taking" && !address.length){
         tg.showAlert('укажите адрес куда доставить')
         return
     }
