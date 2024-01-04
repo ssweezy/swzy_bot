@@ -5,7 +5,6 @@ import {
     showErrorMessage,
     setBasketLocalStorage,
     getBasketLocalStorage,
-    checkingRelevanceValueBasket,
     getSizeLocalStorage,
     setSizeLocalStorage
 } from './utils.js';
@@ -107,7 +106,7 @@ tg.MainButton.onClick(function(){
         })}    
     renderProductsBasket(findProducts)
 
-
+    console.log(item)
     
     let order = JSON.stringify({
         "payment": payment,
@@ -117,6 +116,11 @@ tg.MainButton.onClick(function(){
         "phone": phone,
         "items": item
     })
-    
+    console.log(order)
     tg.sendData(order)
+})
+
+tg.BackButton.onClick(() => {
+    window.location.href = 'basket.html'
+    return
 })
