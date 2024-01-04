@@ -29,7 +29,7 @@ async def main():
     dp.shutdown.register(on_shutdown)
 
     dp.message.register(func_start, F.text == "/start")
-    dp.message.register(func_webapp, F.content_types == "web_app_data")
+    dp.message.register(func_webapp, F.web_app_data == "item")
 
     try:
         await dp.start_polling(bot)

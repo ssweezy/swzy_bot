@@ -3,11 +3,11 @@ from aiogram.utils.keyboard import KeyboardBuilder
 from users.db import DataBase
 
 db = DataBase('swzy_db')
-web_app=WebAppInfo(url="https://iridescent-duckanoo-20b130.netlify.app/")
+web_app = WebAppInfo(url="https://iridescent-duckanoo-20b130.netlify.app/")
 
 keyboard = ReplyKeyboardMarkup(
     keyboard=[
-        [ReplyKeyboardMarkup(text="open SWZY!", web_app=web_app)]
+        [KeyboardButton(text="open SWZY!", web_app=web_app)]
     ],
     resize_keyboard=True
 )
