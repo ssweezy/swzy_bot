@@ -9,8 +9,8 @@ import {
     setSizeLocalStorage
 } from './utils.js';
 
-
-
+//переменная куда помещается информация с json файла с товаром
+let data = []
 let tg = window.Telegram.WebApp
 
 try{
@@ -88,9 +88,9 @@ tg.MainButton.onClick(async function(){
     }
     
     // получение списка товаров
-    const res = fetch('../data/products.json');
+    const res = await fetch('../data/products.json');
     
-    data = res.json();
+    data = await res.json();
     console.log(`data = ${data}`)
 
     const basket = getBasketLocalStorage()
