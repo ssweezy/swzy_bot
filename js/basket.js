@@ -28,9 +28,9 @@ async function getProducts() {
             }
             productsData = await res.json();
         }
-        
-        loadProductBasket(productsData);
 
+        loadProductBasket(productsData);
+        
     } catch (err) {
         showErrorMessage(ERROR_SERVER);
         console.log(err.message);
@@ -86,7 +86,7 @@ function renderProductsBasket(arr) {
         const {id, img1, title, color, price} = card;
         const basket = getBasketLocalStorage();
         const sizes = getSizeLocalStorage()
-        setSizeLocalStorage(sizes)
+        setBasketLocalStorage(basket)
         console.log(basket)
         console.log(sizes)
         const size = sizes[basket.indexOf(String(id))]
