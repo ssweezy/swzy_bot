@@ -45,7 +45,7 @@ function loadProductBasket(data) {
         return;
     }
 
-    checkingRelevanceValueBasket(data);
+    // checkingRelevanceValueBasket(data);
     const basket = getBasketLocalStorage(); 
 
     if(!basket || !basket.length) {
