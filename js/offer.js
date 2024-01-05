@@ -116,9 +116,7 @@ tg.MainButton.onClick(async function(){
         "items": data
     }]
 
-    let clear = ""
-    setBasketLocalStorage(clear)
-    setSizeLocalStorage(clear)
+    localStorage.clear()
     tg.sendData(order)
 })
 
