@@ -71,7 +71,7 @@ tg.MainButton.onClick(async function(){
         tg.showAlert('введите имя')
         return
     }
-    if (address != "self-taking" && !address.length){
+    if (address == "shipping" && !address.length){
         tg.showAlert('укажите адрес куда доставить')
         return
     }
@@ -98,13 +98,29 @@ tg.MainButton.onClick(async function(){
     console.log(findProducts)
     // отгрузка товаров в backend
     
+    data = []
+    findProducts.forEach(card => {
+        const {id, title, price, color, material} = card;
+        const basket = getBasketLocalStorage();
+        const sizes = getSizeLocalStorage()
+        const size = sizes[basket.indexOf(String(id))]
+        data.push([{
+           "id":id,
+           "title": title,
+           "price": price,
+           "color": color,
+           "material": material,
+           "size": size
+        }])
+    })
+
     let order = [{
         "payment": payment,
         "shipping": shipping,
         "name": name,
         "address": address,
         "phone": phone,
-        "items": findProducts
+        "items": data
     }]
 
     console.log(order)

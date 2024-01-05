@@ -55,8 +55,8 @@ function renderStartPage(data) {
         return 
     };
 
-    const arrCards = data.slice(0, COUNT_SHOW_CARDS_CLICK);
-    createCards(arrCards);
+    // const arrCards = data.slice(0, COUNT_SHOW_CARDS_CLICK);
+    createCards(data);
 
     // checkingRelevanceValueBasket(data);
 
