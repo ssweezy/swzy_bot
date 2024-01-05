@@ -29,7 +29,6 @@ tg.MainButton.onClick(async function(){
     for (let i = 0; i < radioPayment.length; i++){
         if(radioPayment[i].checked){
             payment = radioPayment[i].value
-            console.log(payment)
             break
         }
     }
@@ -39,7 +38,6 @@ tg.MainButton.onClick(async function(){
     for (let i = 0; i < radioShipping.length; i++){
         if(radioShipping[i].checked){
             shipping = radioShipping[i].value
-            console.log(shipping)
             break
         }
     }
@@ -54,9 +52,6 @@ tg.MainButton.onClick(async function(){
     let inputPhone = document.getElementById('phone')
     let phone = inputPhone.value
 
-    console.log(name)
-    console.log(address)
-    console.log(phone)
     
     // проверки на пустые поля
     if (payment == undefined){
@@ -91,13 +86,11 @@ tg.MainButton.onClick(async function(){
     const res = await fetch('../data/products.json');
     
     data = await res.json();
-    console.log(`data = ${data}`)
 
     const basket = getBasketLocalStorage()
     const findProducts = data.filter(item => basket.includes(String(item.id)));
-    console.log(findProducts)
-    // отгрузка товаров в backend
     
+    // отгрузка товаров в backend
     data = []
     findProducts.forEach(card => {
         const {id, title, price, color, material} = card;
@@ -123,7 +116,9 @@ tg.MainButton.onClick(async function(){
         "items": data
     }]
 
-    console.log(order)
+    let clear = []
+    setBasketLocalStorage(clear)
+    setSizeLocalStorage(clear)
     tg.sendData(order)
 })
 
