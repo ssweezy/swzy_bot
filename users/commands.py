@@ -3,6 +3,7 @@ from aiogram.types import Message, WebAppInfo, KeyboardButton, ReplyKeyboardRemo
 from aiogram.utils.keyboard import KeyboardBuilder  
 from users.db import DataBase
 import config as cfg
+import json
 
 db = DataBase('swzy_db')
 web_app = WebAppInfo(url="https://iridescent-duckanoo-20b130.netlify.app/")
@@ -33,52 +34,67 @@ async def func_webapp(web_app_message, bot: Bot):
 
     # print(web_app_message)
     await web_app_message.answer('до меня дошел ваш заказ')
-    print(web_app_message.web_app_data.data)
+    # print(web_app_message.web_app_data.data, end="\n")
+    
+
 
     # вывод сообщения с заказом
-    data = web_app_message.web_app_data.data
+    data = json.loads(web_app_message.web_app_data.data)[0]
+    
+    print("data look like:", data, type(data), sep='\n')
     items = data["items"]
+    print("items looks like -", items, end="\n")
+    print(type(items))
+    print(items[0])
+    print(items[0][0])
+    print(items[1])
 
     products = ''
     total_price = 0
 
     for elem in items:
         for info in elem:
-            products += f'{info["title"]} {info["size"]}- {info["price"]}руб \n'
+            products += f'{info["title"]} {info["size"]} - {info["price"]}руб \n'
             total_price += int(info["price"])
+    print(products)
+    print(total_price)
 
 
-    offer = f"""
-    <b>чек заказа</b>
+    offer = f"""<b>чек заказа</b>
 
-    имя клиента - {data["name"]}
-    номер телефона - {data["phone"]}
-    способ оплаты - {data["payment"]}
-    способ получения - {data["shipping"]}
+имя клиента - {data["name"]}
+номер телефона - {data["phone"]}
+способ оплаты - {data["payment"]}
+способ получения - {data["shipping"]}
 
-    состав заказа:
-    {products}
+состав заказа:
+{products}
 
-    итого: {total_price}руб
+итого: {total_price}руб
     """
+    print(offer)
 
     # сообщение в чат владельцам
-    offer_to_owner = f"""
-    <b>чек заказа #</b>
+    offer_to_owner = f"""<b>чек заказа #</b>
 
-    юз клиента - @{web_app_message.username}
-    имя клиента - {data["name"]}
-    номер телефона - {data["phone"]}
-    способ оплаты - {data["payment"]}
-    способ получения - {data["shipping"]}
-    адрес доставки - {data["address"]}
+юз клиента - @{web_app_message.chat.username}
+ссылка на клиента - tg://user?id={web_app_message.chat.id}
+имя - {data["name"]}
+номер телефона - {data["phone"]}
+способ оплаты - {data["payment"]}
+способ получения - {data["shipping"]}
+адрес доставки - {data["address"]}
 
-    состав заказа:
-    {products}
+состав заказа:
+{products}
 
-    итого: {total_price}руб
+итого: {total_price}руб
     """
+    print(offer_to_owner, '\n')
+    print("username", web_app_message.chat.username)
+    
 
+    print("перед двумя функциями")
     await web_app_message.answer(f'{offer}')
     await bot.send_message(cfg.admin, f'{offer_to_owner}')
-    print("дошел до конца")
+    print("после них")

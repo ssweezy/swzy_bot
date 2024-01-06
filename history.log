@@ -1230,3 +1230,634 @@ Traceback (most recent call last):
 TypeError: string indices must be integers, not 'str'
 2024-01-06 05:06:30,244 INFO Polling stopped
 2024-01-06 05:06:30,787 INFO Polling stopped for bot @swzy_bot id=6768503726 - 'SWZY!'
+2024-01-06 05:06:33,824 INFO Start polling
+2024-01-06 05:06:33,903 INFO Run polling for bot @swzy_bot id=6768503726 - 'SWZY!'
+2024-01-06 05:06:58,553 INFO Update id=683638808 is handled. Duration 358 ms by bot id=6768503726
+2024-01-06 05:14:04,259 INFO Update id=683638809 is handled. Duration 422 ms by bot id=6768503726
+2024-01-06 05:14:41,505 INFO Update id=683638810 is not handled. Duration 312 ms by bot id=6768503726
+2024-01-06 05:14:41,505 ERROR Cause exception while process update id=683638810 by bot id=6768503726
+TypeError: string indices must be integers, not 'str'
+Traceback (most recent call last):
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "c:\programming\swzy_bot\users\commands.py", line 40, in func_webapp
+    items = data["items"]
+            ~~~~^^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+2024-01-06 05:19:27,411 INFO Polling stopped
+2024-01-06 05:19:27,922 INFO Polling stopped for bot @swzy_bot id=6768503726 - 'SWZY!'
+2024-01-06 05:19:30,562 INFO Start polling
+2024-01-06 05:19:30,646 INFO Run polling for bot @swzy_bot id=6768503726 - 'SWZY!'
+2024-01-06 05:20:34,884 INFO Update id=683638811 is not handled. Duration 312 ms by bot id=6768503726
+2024-01-06 05:20:34,884 ERROR Cause exception while process update id=683638811 by bot id=6768503726
+TypeError: string indices must be integers, not 'str'
+Traceback (most recent call last):
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "c:\programming\swzy_bot\users\commands.py", line 41, in func_webapp
+    items = data["items"]
+            ~~~~^^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+2024-01-06 05:24:39,274 INFO Polling stopped
+2024-01-06 05:24:39,800 INFO Polling stopped for bot @swzy_bot id=6768503726 - 'SWZY!'
+2024-01-06 05:24:44,032 INFO Start polling
+2024-01-06 05:24:44,114 INFO Run polling for bot @swzy_bot id=6768503726 - 'SWZY!'
+2024-01-06 05:24:48,823 INFO Update id=683638812 is handled. Duration 391 ms by bot id=6768503726
+2024-01-06 05:25:26,601 INFO Update id=683638813 is not handled. Duration 280 ms by bot id=6768503726
+2024-01-06 05:25:26,601 ERROR Cause exception while process update id=683638813 by bot id=6768503726
+TypeError: string indices must be integers, not 'str'
+Traceback (most recent call last):
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "c:\programming\swzy_bot\users\commands.py", line 42, in func_webapp
+    items = data["items"]
+            ~~~~^^^^^^^^^
+TypeError: string indices must be integers, not 'str'
+2024-01-06 05:33:57,355 INFO Polling stopped
+2024-01-06 05:33:57,896 INFO Polling stopped for bot @swzy_bot id=6768503726 - 'SWZY!'
+2024-01-06 05:34:02,219 INFO Start polling
+2024-01-06 05:34:02,302 INFO Run polling for bot @swzy_bot id=6768503726 - 'SWZY!'
+2024-01-06 05:34:05,858 INFO Update id=683638814 is handled. Duration 375 ms by bot id=6768503726
+2024-01-06 05:34:21,391 INFO Update id=683638815 is not handled. Duration 297 ms by bot id=6768503726
+2024-01-06 05:34:21,391 ERROR Cause exception while process update id=683638815 by bot id=6768503726
+AttributeError: 'Message' object has no attribute 'username'
+Traceback (most recent call last):
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\pydantic\main.py", line 753, in __getattr__
+    return pydantic_extra[item]
+           ~~~~~~~~~~~~~~^^^^^^
+KeyError: 'username'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "c:\programming\swzy_bot\users\commands.py", line 75, in func_webapp
+    юз клиента - @{web_app_message.username}
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\pydantic\main.py", line 755, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}') from exc
+AttributeError: 'Message' object has no attribute 'username'
+2024-01-06 05:37:44,885 INFO Polling stopped
+2024-01-06 05:37:45,397 INFO Polling stopped for bot @swzy_bot id=6768503726 - 'SWZY!'
+2024-01-06 05:37:49,422 INFO Start polling
+2024-01-06 05:37:49,513 INFO Run polling for bot @swzy_bot id=6768503726 - 'SWZY!'
+2024-01-06 05:38:08,358 INFO Update id=683638816 is not handled. Duration 297 ms by bot id=6768503726
+2024-01-06 05:38:08,358 ERROR Cause exception while process update id=683638816 by bot id=6768503726
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "c:\programming\swzy_bot\users\commands.py", line 50, in func_webapp
+    print(items[1])
+          ~~~~~^^^
+IndexError: list index out of range
+2024-01-06 05:40:29,536 INFO Update id=683638817 is not handled. Duration 296 ms by bot id=6768503726
+2024-01-06 05:40:29,537 ERROR Cause exception while process update id=683638817 by bot id=6768503726
+AttributeError: 'Message' object has no attribute 'username'
+Traceback (most recent call last):
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\pydantic\main.py", line 753, in __getattr__
+    return pydantic_extra[item]
+           ~~~~~~~~~~~~~~^^^^^^
+KeyError: 'username'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "c:\programming\swzy_bot\users\commands.py", line 79, in func_webapp
+    юз клиента - @{web_app_message.username}
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\pydantic\main.py", line 755, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}') from exc
+AttributeError: 'Message' object has no attribute 'username'
+2024-01-06 05:46:11,899 INFO Polling stopped
+2024-01-06 05:46:12,426 INFO Polling stopped for bot @swzy_bot id=6768503726 - 'SWZY!'
+2024-01-06 05:46:16,637 INFO Start polling
+2024-01-06 05:46:16,714 INFO Run polling for bot @swzy_bot id=6768503726 - 'SWZY!'
+2024-01-06 05:46:34,401 INFO Update id=683638818 is not handled. Duration 265 ms by bot id=6768503726
+2024-01-06 05:46:34,401 ERROR Cause exception while process update id=683638818 by bot id=6768503726
+AttributeError: 'Message' object has no attribute 'username'
+Traceback (most recent call last):
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\pydantic\main.py", line 753, in __getattr__
+    return pydantic_extra[item]
+           ~~~~~~~~~~~~~~^^^^^^
+KeyError: 'username'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "c:\programming\swzy_bot\users\commands.py", line 81, in func_webapp
+    юз клиента - @{web_app_message.username}
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\pydantic\main.py", line 755, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}') from exc
+AttributeError: 'Message' object has no attribute 'username'
+2024-01-06 05:49:02,859 INFO Polling stopped
+2024-01-06 05:49:03,372 INFO Polling stopped for bot @swzy_bot id=6768503726 - 'SWZY!'
+2024-01-06 05:49:06,977 INFO Start polling
+2024-01-06 05:49:07,055 INFO Run polling for bot @swzy_bot id=6768503726 - 'SWZY!'
+2024-01-06 05:49:25,138 INFO Update id=683638819 is not handled. Duration 640 ms by bot id=6768503726
+2024-01-06 05:49:25,139 ERROR Cause exception while process update id=683638819 by bot id=6768503726
+AttributeError: 'Message' object has no attribute 'username'
+Traceback (most recent call last):
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\pydantic\main.py", line 753, in __getattr__
+    return pydantic_extra[item]
+           ~~~~~~~~~~~~~~^^^^^^
+KeyError: 'username'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "c:\programming\swzy_bot\users\commands.py", line 82, in func_webapp
+    юз клиента - @{web_app_message.username}
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\pydantic\main.py", line 755, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}') from exc
+AttributeError: 'Message' object has no attribute 'username'
+2024-01-06 05:55:53,247 INFO Polling stopped
+2024-01-06 05:55:53,790 INFO Polling stopped for bot @swzy_bot id=6768503726 - 'SWZY!'
+2024-01-06 05:56:01,164 INFO Start polling
+2024-01-06 05:56:01,248 INFO Run polling for bot @swzy_bot id=6768503726 - 'SWZY!'
+2024-01-06 05:56:22,015 INFO Update id=683638820 is not handled. Duration 312 ms by bot id=6768503726
+2024-01-06 05:56:22,015 ERROR Cause exception while process update id=683638820 by bot id=6768503726
+AttributeError: 'Message' object has no attribute 'username'
+Traceback (most recent call last):
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\pydantic\main.py", line 753, in __getattr__
+    return pydantic_extra[item]
+           ~~~~~~~~~~~~~~^^^^^^
+KeyError: 'username'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "c:\programming\swzy_bot\users\commands.py", line 93, in func_webapp
+    print("username", web_app_message.username)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\pydantic\main.py", line 755, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}') from exc
+AttributeError: 'Message' object has no attribute 'username'
+2024-01-06 05:56:57,725 INFO Polling stopped
+2024-01-06 05:56:58,241 INFO Polling stopped for bot @swzy_bot id=6768503726 - 'SWZY!'
+2024-01-06 05:57:02,396 INFO Start polling
+2024-01-06 05:57:02,483 INFO Run polling for bot @swzy_bot id=6768503726 - 'SWZY!'
+2024-01-06 05:57:22,880 INFO Update id=683638821 is not handled. Duration 297 ms by bot id=6768503726
+2024-01-06 05:57:22,880 ERROR Cause exception while process update id=683638821 by bot id=6768503726
+AttributeError: 'Message' object has no attribute 'username'
+Traceback (most recent call last):
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\pydantic\main.py", line 753, in __getattr__
+    return pydantic_extra[item]
+           ~~~~~~~~~~~~~~^^^^^^
+KeyError: 'username'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "c:\programming\swzy_bot\users\commands.py", line 93, in func_webapp
+    print("username", web_app_message.username)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\pydantic\main.py", line 755, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}') from exc
+AttributeError: 'Message' object has no attribute 'username'
+2024-01-06 06:00:03,512 INFO Polling stopped
+2024-01-06 06:00:04,016 INFO Polling stopped for bot @swzy_bot id=6768503726 - 'SWZY!'
+2024-01-06 06:00:08,476 INFO Start polling
+2024-01-06 06:00:08,559 INFO Run polling for bot @swzy_bot id=6768503726 - 'SWZY!'
+2024-01-06 06:00:36,332 INFO Update id=683638822 is not handled. Duration 343 ms by bot id=6768503726
+2024-01-06 06:00:36,332 ERROR Cause exception while process update id=683638822 by bot id=6768503726
+AttributeError: 'Message' object has no attribute 'username'
+Traceback (most recent call last):
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\pydantic\main.py", line 753, in __getattr__
+    return pydantic_extra[item]
+           ~~~~~~~~~~~~~~^^^^^^
+KeyError: 'username'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\fsm\middleware.py", line 41, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 116, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 111, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\router.py", line 136, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "c:\programming\swzy_bot\users\commands.py", line 93, in func_webapp
+    print("username", web_app_message.username)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\programming\swzy_bot\venv\Lib\site-packages\pydantic\main.py", line 755, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}') from exc
+AttributeError: 'Message' object has no attribute 'username'
+2024-01-06 06:01:08,039 INFO Polling stopped
+2024-01-06 06:01:08,579 INFO Polling stopped for bot @swzy_bot id=6768503726 - 'SWZY!'
