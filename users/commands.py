@@ -1,7 +1,8 @@
+from aiogram import Bot
 from aiogram.types import Message, WebAppInfo, KeyboardButton, ReplyKeyboardRemove, ReplyKeyboardMarkup
 from aiogram.utils.keyboard import KeyboardBuilder  
 from users.db import DataBase
-from main import cfg, Bot
+import config as cfg
 
 db = DataBase('swzy_db')
 web_app = WebAppInfo(url="https://iridescent-duckanoo-20b130.netlify.app/")
@@ -27,10 +28,11 @@ async def func_start(message: Message):
 
 async def func_webapp(web_app_message, bot: Bot):
     
+    print(web_app_message)
     print(web_app_message.web_app_data.data)
 
     # вывод сообщения с заказом
-    data = web_app_message[0]
+    data = web_app_message.web_app_data.data
     items = data["items"]
 
     products = ''
@@ -64,6 +66,7 @@ async def func_webapp(web_app_message, bot: Bot):
     номер телефона - {data["phone"]}
     способ оплаты - {data["payment"]}
     способ получения - {data["shipping"]}
+    адрес доставки - {data["address"]}
 
     состав заказа:
     {products}
@@ -72,4 +75,4 @@ async def func_webapp(web_app_message, bot: Bot):
     """
 
     await web_app_message.answer(offer)
-    await bot.send_message(cfg.admin, )
+    await bot.send_message(cfg.admin, of)

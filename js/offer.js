@@ -108,7 +108,6 @@ tg.MainButton.onClick(async function(){
     })
 
     let order = [{
-        "initData": tg.initData,
         "payment": payment,
         "shipping": shipping,
         "name": name,
