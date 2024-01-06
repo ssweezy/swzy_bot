@@ -72,7 +72,6 @@ tg.MainButton.onClick(async function(){
     }
     if (shipping == "самовывоз"){
         address = 'самовывоз'
-        return
     }
     if (!phone.length){
         tg.showAlert('введите номер телефона')

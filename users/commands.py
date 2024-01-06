@@ -24,7 +24,7 @@ async def func_start(message: Message):
     # кнопка с ссылкой на вебапп 
     await message.answer("bo", reply_markup=ReplyKeyboardRemove())
     await message.answer(f"welcome to SWZY! co ltd", reply_markup=keyboard)
-    print(message.text)
+    print(message.text, message.from_user.username)
 
 
 async def func_webapp(web_app_message, bot: Bot):
@@ -41,12 +41,7 @@ async def func_webapp(web_app_message, bot: Bot):
     # вывод сообщения с заказом
     data = json.loads(web_app_message.web_app_data.data)[0]
     
-    print("data look like:", data, type(data), sep='\n')
     items = data["items"]
-    print("items looks like -", items, end="\n")
-    print(type(items))
-    
-    
 
     products = ''
     total_price = 0
@@ -55,9 +50,6 @@ async def func_webapp(web_app_message, bot: Bot):
         for info in elem:
             products += f'{info["title"]} {info["size"]} - {info["price"]}руб \n'
             total_price += int(info["price"])
-    print(products)
-    print(total_price)
-
 
     offer = f"""<b>чек заказа</b>
 
@@ -71,8 +63,6 @@ async def func_webapp(web_app_message, bot: Bot):
 
 итого: {total_price}руб
     """
-    print(offer)
-
     # сообщение в чат владельцам
     offer_to_owner = f"""<b>чек заказа #</b>
 
@@ -88,12 +78,7 @@ async def func_webapp(web_app_message, bot: Bot):
 {products}
 
 итого: {total_price}руб
-    """
-    print(offer_to_owner, '\n')
-    print("username", web_app_message.chat.username)
-    
+    """   
 
-    print("перед двумя функциями")
     await web_app_message.answer(f'{offer}')
     await bot.send_message(cfg.admin, f'{offer_to_owner}')
-    print("после них")
