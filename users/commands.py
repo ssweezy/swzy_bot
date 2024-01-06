@@ -18,7 +18,7 @@ async def func_start(message: Message):
         db.add_user(message.from_user.id, message.from_user.username, message.from_user.first_name,
                     message.from_user.last_name, message.from_user.url)
 
-    # открывается    
+    # кнопка с ссылкой на вебапп 
     await message.answer("bo", reply_markup=ReplyKeyboardRemove())
     await message.answer(f"welcome to SWZY! co ltd", reply_markup=keyboard)
     print(message.text)
