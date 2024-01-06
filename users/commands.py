@@ -45,9 +45,8 @@ async def func_webapp(web_app_message, bot: Bot):
     items = data["items"]
     print("items looks like -", items, end="\n")
     print(type(items))
-    print(items[0])
-    print(items[0][0])
-    print(items[1])
+    
+    
 
     products = ''
     total_price = 0

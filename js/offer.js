@@ -59,7 +59,7 @@ tg.MainButton.onClick(async function(){
         return
     } 
     if (shipping == undefined){
-        tg.showAlert('выберите доставки')
+        tg.showAlert('выберите доставку')
         return
     }
     if (!name.length){
@@ -68,6 +68,10 @@ tg.MainButton.onClick(async function(){
     }
     if (shipping == "доставка" && address.length < 1){
         tg.showAlert('укажите адрес куда доставить')
+        return
+    }
+    if (shipping == "самовывоз"){
+        address = 'самовывоз'
         return
     }
     if (!phone.length){

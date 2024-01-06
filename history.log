@@ -1861,3 +1861,8 @@ Traceback (most recent call last):
 AttributeError: 'Message' object has no attribute 'username'
 2024-01-06 06:01:08,039 INFO Polling stopped
 2024-01-06 06:01:08,579 INFO Polling stopped for bot @swzy_bot id=6768503726 - 'SWZY!'
+2024-01-06 06:01:12,108 INFO Start polling
+2024-01-06 06:01:12,192 INFO Run polling for bot @swzy_bot id=6768503726 - 'SWZY!'
+2024-01-06 06:01:28,402 INFO Update id=683638823 is handled. Duration 500 ms by bot id=6768503726
+2024-01-06 06:21:56,949 INFO Polling stopped
+2024-01-06 06:21:57,465 INFO Polling stopped for bot @swzy_bot id=6768503726 - 'SWZY!'
