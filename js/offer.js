@@ -66,7 +66,7 @@ tg.MainButton.onClick(async function(){
         tg.showAlert('введите имя')
         return
     }
-    if (address == "доставка" && address.length < 1){
+    if (shipping == "доставка" && address.length < 1){
         tg.showAlert('укажите адрес куда доставить')
         return
     }

@@ -27,8 +27,12 @@ async def func_start(message: Message):
 
 
 async def func_webapp(web_app_message, bot: Bot):
-    
-    print(web_app_message)
+    if web_app_message.chat.type != 'private':
+        await web_app_message.answer('бот не принимает заказы в чатах')
+        return
+
+    # print(web_app_message)
+    await web_app_message.answer('до меня дошел ваш заказ')
     print(web_app_message.web_app_data.data)
 
     # вывод сообщения с заказом
@@ -62,6 +66,7 @@ async def func_webapp(web_app_message, bot: Bot):
     offer_to_owner = f"""
     <b>чек заказа #</b>
 
+    юз клиента - @{web_app_message.username}
     имя клиента - {data["name"]}
     номер телефона - {data["phone"]}
     способ оплаты - {data["payment"]}
@@ -74,5 +79,6 @@ async def func_webapp(web_app_message, bot: Bot):
     итого: {total_price}руб
     """
 
-    await web_app_message.answer(offer)
-    await bot.send_message(cfg.admin, of)
+    await web_app_message.answer(f'{offer}')
+    await bot.send_message(cfg.admin, f'{offer_to_owner}')
+    print("дошел до конца")
