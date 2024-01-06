@@ -1,6 +1,7 @@
 from aiogram.types import Message, WebAppInfo, KeyboardButton, ReplyKeyboardRemove, ReplyKeyboardMarkup
 from aiogram.utils.keyboard import KeyboardBuilder  
 from users.db import DataBase
+from main import cfg, Bot
 
 db = DataBase('swzy_db')
 web_app = WebAppInfo(url="https://iridescent-duckanoo-20b130.netlify.app/")
@@ -24,8 +25,51 @@ async def func_start(message: Message):
     print(message.text)
 
 
-async def func_webapp(web_app_message):
+async def func_webapp(web_app_message, bot: Bot):
     
     print(web_app_message.web_app_data.data)
-    await web_app_message.answer('web data recieved')
-    await web_app_message.answer(web_app_message.web_app_data.data)
+
+    # вывод сообщения с заказом
+    data = web_app_message[0]
+    items = data["items"]
+
+    products = ''
+    total_price = 0
+
+    for elem in items:
+        for info in elem:
+            products += f'{info["title"]} {info["size"]}- {info["price"]}руб \n'
+            total_price += int(info["price"])
+
+
+    offer = f"""
+    <b>чек заказа</b>
+
+    имя клиента - {data["name"]}
+    номер телефона - {data["phone"]}
+    способ оплаты - {data["payment"]}
+    способ получения - {data["shipping"]}
+
+    состав заказа:
+    {products}
+
+    итого: {total_price}руб
+    """
+
+    # сообщение в чат владельцам
+    offer_to_owner = f"""
+    <b>чек заказа #</b>
+
+    имя клиента - {data["name"]}
+    номер телефона - {data["phone"]}
+    способ оплаты - {data["payment"]}
+    способ получения - {data["shipping"]}
+
+    состав заказа:
+    {products}
+
+    итого: {total_price}руб
+    """
+
+    await web_app_message.answer(offer)
+    await bot.send_message(cfg.admin, )

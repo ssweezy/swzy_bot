@@ -22,7 +22,7 @@ async def on_shutdown(bot: Bot):
 async def main():
     logging.basicConfig(level=logging.INFO, filename="history.log", encoding="utf-8",
                         format="%(asctime)s %(levelname)s %(message)s")
-    bot = Bot(cfg.TOKEN)
+    bot = Bot(cfg.TOKEN, parse_mode='HTML')
     dp = Dispatcher()
 
     # func registration
