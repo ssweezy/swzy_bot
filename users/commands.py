@@ -48,7 +48,7 @@ async def func_webapp(web_app_message, bot: Bot):
 
     for elem in items:
         for info in elem:
-            products += f'{info["title"]} {info["size"]} - {info["price"]}руб \n'
+            products += f'{info["title"]} {info["color"]} {info["size"]} - {info["price"]}руб \n'
             total_price += int(info["price"])
 
     offer = f"""<b>чек заказа</b>

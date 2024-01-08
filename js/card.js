@@ -70,15 +70,15 @@ function loadProductDetails(data) {
 
 // карусель и фотки
 function renderInfoProduct(product) {
-    const {img1, img2, title, price, color, material} = product;
+    const {img1, img2, img3, img4, title, price, color, material} = product;
     // const priceDiscount = price - ((price * discount) / 100);
     const productItem = 
         `
     <div class="photo">
         <img class="production" src="./card_photos/${img1}">
         <img class="production" src="./card_photos/${img2}">
-        <img class="production" src="./card_photos/${img1}">
-        <img class="production" src="./card_photos/${img2}">
+        <img class="production" src="./card_photos/${img3}">
+        <img class="production" src="./card_photos/${img4}">
     </div>
 
     <div class="name">${title}</div>
