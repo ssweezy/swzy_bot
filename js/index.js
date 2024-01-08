@@ -117,9 +117,9 @@ function renderStartPage(data) {
 function createCards(data) {
     data.forEach(card => {
         const {id, cardimg, title, type} = card;
-        var pants = document.getElementById('pants')
-        var zip = document.getElementById('zip')
-        var long = document.getElementById('long')
+        var pants = document.querySelector('.pants')
+        var zip = document.querySelector('.zip')
+        var long = document.querySelector('.long')
 		const cardItem = 
 			`
                 <div class="card" data-product-id="${id}">
